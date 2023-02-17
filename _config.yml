@@ -1,0 +1,49 @@
+### Site metadata
+
+# Don't make the title longer than this, otherwise it gets covered in mobile view.
+title: Sharc
+description: Insights into the world of web3 and Decentralization of different platforms.
+
+email: iarunavaofficial@gmail.com
+twitter_username: amArunava
+github_username: iarunava
+rss: RSS
+
+### Build settings
+
+url: https://iarunava.github.io
+baseurl: /sharcblog
+
+permalink: pretty
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  tools:
+    output: true
+  languages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - docs/
+  - vendor/
+  - Gemfile # Gemfile.lock is implied because of how matching works.
+  - LICENSE
+  - Makefile
+  - README.md
+  - sample*.png
+
+liquid:
+  error_mode: strict
+
+strict_front_matter: true
