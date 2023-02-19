@@ -1,5 +1,5 @@
-# hackwithVyshu Security Blog 🧪 📝 🚀
-> Security Blog
+# sharcBlog 🧪 📝 🚀
+> Blog
 
 <!-- Badges generated with https://github.com/MichaelCurrin/badge-generator -->
 
