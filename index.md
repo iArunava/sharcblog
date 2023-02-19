@@ -1,13 +1,13 @@
 ---
-title:
+title: Sharc
 layout: home
 ---
 
 <!-- TODO: Replace all the content below with you own -->
 
-Welcome to my **Jekyll Blog Demo**.
+<!--A blog written and maintained **Jekyll Blog Demo**.-->
 
-[![MichaelCurrin - jekyll-blog-demo](https://img.shields.io/static/v1?label=MichaelCurrin&message=jekyll-blog-demo&color=blue&logo=github)](https://github.com/MichaelCurrin/jekyll-blog-demo)
+<!--[![MichaelCurrin - jekyll-blog-demo](https://img.shields.io/static/v1?label=MichaelCurrin&message=jekyll-blog-demo&color=blue&logo=github)](https://github.com/MichaelCurrin/jekyll-blog-demo)
 [![stars - jekyll-blog-demo](https://img.shields.io/github/stars/MichaelCurrin/jekyll-blog-demo?style=social)](https://github.com/MichaelCurrin/jekyll-blog-demo)
 [![forks - jekyll-blog-demo](https://img.shields.io/github/forks/MichaelCurrin/jekyll-blog-demo?style=social)](https://github.com/MichaelCurrin/jekyll-blog-demo)
 
@@ -20,9 +20,12 @@ Create a new Jekyll blog based on this demo.
     </a>
 </div>
 
+-->
 
+<!--
 ## Table of contents
 
 For Jekyll developers - this is a list of all collections and the pages under each.
 
 {% include collections-overview.html %}
+-->

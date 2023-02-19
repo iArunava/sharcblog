@@ -1,24 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/jekyll-blog-demo/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/jekyll-blog-demo/" rel="alternate" type="text/html" /><updated>2023-02-08T13:13:06+05:30</updated><id>http://localhost:4000/jekyll-blog-demo/feed.xml</id><title type="html">hackwithVyshu</title><subtitle>Security blog about the latest vulnerabilities, exploits, how-tos, breaches and everything security.</subtitle><entry><title type="html">First post!</title><link href="http://localhost:4000/jekyll-blog-demo/2018/12/22/first-post/" rel="alternate" type="text/html" title="First post!" /><published>2018-12-22T00:00:00+05:30</published><updated>2018-12-22T00:00:00+05:30</updated><id>http://localhost:4000/jekyll-blog-demo/2018/12/22/first-post</id><content type="html" xml:base="http://localhost:4000/jekyll-blog-demo/2018/12/22/first-post/">&lt;p&gt;This is my first post after the one created as part of the blog template.&lt;/p&gt;</content><author><name></name></author><summary type="html">This is my first post after the one created as part of the blog template.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll-blog-demo/jekyll/update/2018/12/18/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-12-18T21:54:52+05:30</published><updated>2018-12-18T21:54:52+05:30</updated><id>http://localhost:4000/jekyll-blog-demo/jekyll/update/2018/12/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll-blog-demo/jekyll/update/2018/12/18/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/sharcblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/sharcblog/" rel="alternate" type="text/html" /><updated>2023-02-19T13:48:45+05:30</updated><id>http://localhost:4000/sharcblog/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">Web3 Gaming: The future of Gaming!</title><link href="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/" rel="alternate" type="text/html" title="Web3 Gaming: The future of Gaming!" /><published>2023-01-07T00:00:00+05:30</published><updated>2023-01-07T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/">&lt;p&gt;The global gaming market has been valued at $195 billion in 2021 (&lt;a href=&quot;https://www.grandviewresearch.com/industry-analysis/video-game-market&quot;&gt;source&lt;/a&gt;). In &lt;strong&gt;2021 alone people have spent $54B on in-game items&lt;/strong&gt; (&lt;a href=&quot;https://www.statista.com/statistics/558952/in-game-consumer-spending-worldwide/&quot;&gt;source&lt;/a&gt;). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;With a traditional gaming setting what would happen is, these purchases that the gamer is making would be very confined to that particular game itself and the gamer wont be able to utilize or use this anywhere outside the game itself. In other words, what that would mean is, &lt;strong&gt;your assets are centralized&lt;/strong&gt; (with the gaming company) and you wont be able to use it anywhere other than inside the game itself! Your asset looses value outside that particular game world! But what if … YES!&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets.&lt;/p&gt;
+&lt;p&gt;If you are spending money or time and/or doing some crazy things inside the game which makes you eligible for some asset, be it a new weapon or a new outfit or a new charm to hang on your weapon. &lt;strong&gt;Wouldn’t it be great if you could get a discount on your next Starbucks purchase cause you have unlocked that new asset!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Using backticks.&lt;/p&gt;
+&lt;p&gt;Well that’s just an example of what could happen.! Once your assets become decentralized and has value outside the game world, you can &lt;strong&gt;trade your assets for other things in the open marketplace&lt;/strong&gt; pretty legally and get your hands on some crazy deals!&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Thus, what essentially happens is you &lt;strong&gt;get value in the real-world&lt;/strong&gt; from the time and effort you are putting in the game. And this exactly is the reason, Web3 Gaming has seen some major traction and is expected to grow crazily. If you think logically, this is the way forward. Why would anyone prefer otherwise?!&lt;/p&gt;
 
-&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highlight&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We, thus, are going to live in an era, where playing games can give us access to certain private communities, or exclusive shows, or exclusive events or discounts on popular brands and much much more!&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;For this post, we are going to see:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is Web3 Gaming?&lt;/li&gt;
+  &lt;li&gt;Main features of Web3 Gaming&lt;/li&gt;
+  &lt;li&gt;Some examples of Web3 games already out there!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-web3-gaming&quot;&gt;What is Web3 Gaming?&lt;/h2&gt;
+
+&lt;p&gt;Web3 gaming essentially &lt;strong&gt;decentralizes traditional gaming&lt;/strong&gt;, such that the activities that the gamer perform in the game world, particularly speaking of owning in-game assets and also the decision-making aspects of gaming are delegated away from a central authority.&lt;/p&gt;
+
+&lt;p&gt;Web3 games are &lt;strong&gt;built on top of a blockchain&lt;/strong&gt;. This allows gamers to express their opinions on when and how the game should evolve.&lt;/p&gt;
+
+&lt;p&gt;Web3 gaming also enables the foundation of &lt;strong&gt;play-to-earn&lt;/strong&gt; for players and some changes in the &lt;strong&gt;pay-to-play&lt;/strong&gt; model by offering asset trading.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-features-of-web3-gaming&quot;&gt;Main features of Web3 Gaming&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Ownership&lt;/strong&gt; - With games built on top of the blockchain, the games have a value-exchange model where gamers can completely own in-game assets and collectibles as NFTs and trade them as well using cryptocurrencies. In contrast to traditional gaming, where in-game assets has value and use only inside the game, with web3 game assets, gamers get value of them out in the real world!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interoperability&lt;/strong&gt; - The assets that the gamers collect in a particular game can be used in other games on the same or different blockchains (depends). Not just that, these game assets that are now available to the gamers can be traded on the open market.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Game Studios&lt;/strong&gt; - Its also a win for the developers and gaming studios, as they can offer in-game assets like characters, land or others - what is relevant for the particular game - in the form of NFTs and thus allowing them to raise money and build a audience before the actual launch of the game!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The in-game assets that are offered in a Web3 Game, are basically, NFTs. With NFTs, the quantity of each type of the item is fixed and its origin and history can be tracked, this &lt;strong&gt;gives these assets a authenticity and scarcity!&lt;/strong&gt; That makes it actually valuable and thus some assets can be very hard and rare to get your hands-on!&lt;/p&gt;
+
+&lt;h2 id=&quot;some-web3-games&quot;&gt;Some Web3 Games&lt;/h2&gt;
+
+&lt;h3 id=&quot;cryptokitties&quot;&gt;CryptoKitties&lt;/h3&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/3PTstAK-cH8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Who&lt;/strong&gt;: Developed by Dapper Labs in 2017. It was one of the first-recorded web3 games in the space.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&lt;/strong&gt;:  In the game, users collect, what are called, CryptoKitties, which are basically NFTs. Once they own a few kitties, they can breed between cryptokitties to generate new cryptokitties, which are also NFTs. And the breeding happens through the combination of the so-called “genes” of these cryptokitties.&lt;br /&gt;
+With 1.5 million total users and $40 million worth of transactions on the platform in 2019, the game attracted 14,000 users daily — and made headlines when an in-game pet was sold for $300,000.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;: &lt;a href=&quot;https://www.cryptokitties.co/&quot;&gt;CryptoKitties Website&lt;/a&gt;. The open-marketplace to collect and trade cryptokitties is here at &lt;a href=&quot;https://opensea.io/collection/cryptokitties&quot;&gt;OpenSea - CryptoKitties&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;axie-infinity&quot;&gt;Axie Infinity&lt;/h3&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/X2z_YIeettE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Who&lt;/strong&gt;: Sky Mavix in 2018 March. Another early game in the web3 world.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&lt;/strong&gt;: With a similar model, where users buy their initial characters (in the form of NFTs) and then they perform battles, upgrade, buy lands, and farm resources. There’s also real-time battles where players can earn money.&lt;/p&gt;
+
+&lt;p&gt;Hitting 2.7 million monthly active users in January 2022 (source - CoinDCX).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;: &lt;a href=&quot;https://axieinfinity.com/&quot;&gt;Axie Infinity&lt;/a&gt;. They have their own marketplace!&lt;/p&gt;
+
+&lt;h3 id=&quot;the-sandbox&quot;&gt;The Sandbox&lt;/h3&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/0Jquhzr4d4k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Who&lt;/strong&gt; - PIXOWL INC in 2012&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&lt;/strong&gt;: One of the first games to &lt;strong&gt;offer land on the metaverse&lt;/strong&gt;, in the form of NFTs. The goal of the game is to create experiences like Minecraft on the blockchain and thus essentially disrupt games like Minecraft. Its a platform where users can build, own and monetize their gaming experiences. You can create your own avatar for free to get started!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;:  &lt;a href=&quot;https://www.sandbox.game/en/&quot;&gt;The Sandbox&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Web3 gaming is inevitable. Gaming is a growing sector and &lt;strong&gt;giving gamers ownership&lt;/strong&gt; and thus ideally in one word, freedom, is definitely something that the gamers want and thus will happen.!&lt;/p&gt;
+
+&lt;p&gt;Also, with web3 gaming, theres a &lt;strong&gt;community of the gamers who are continously active and giving feedback throughout the process of the development&lt;/strong&gt; of the game, and thus the desire is pretty prevalent, which allows the gaming studios / developers build it exactly for the demand. Also, the studios can raise money for in-game items before even the game is launched.&lt;/p&gt;
+
+&lt;p&gt;So in short, yeah, it is &lt;strong&gt;in-evitable!&lt;/strong&gt; :)&lt;/p&gt;</content><author><name></name></author><category term="web3" /><category term="gaming" /><category term="games" /><category term="blockchain" /><category term="nft" /><category term="token" /><summary type="html">The global gaming market has been valued at $195 billion in 2021 (source). In 2021 alone people have spent $54B on in-game items (source). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/sharcblog/assets/images/web3gaming_header.jpg" /><media:content medium="image" url="http://localhost:4000/sharcblog/assets/images/web3gaming_header.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
