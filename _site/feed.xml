@@ -1,8 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/sharcblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/sharcblog/" rel="alternate" type="text/html" /><updated>2023-02-19T15:39:49+05:30</updated><id>http://localhost:4000/sharcblog/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">Web3 Gaming: The future of Gaming!</title><link href="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/" rel="alternate" type="text/html" title="Web3 Gaming: The future of Gaming!" /><published>2023-01-07T00:00:00+05:30</published><updated>2023-01-07T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/">&lt;p&gt;The global gaming market has been valued at $195 billion in 2021 (&lt;a href=&quot;https://www.grandviewresearch.com/industry-analysis/video-game-market&quot;&gt;source&lt;/a&gt;). In &lt;strong&gt;2021 alone people have spent $54B on in-game items&lt;/strong&gt; (&lt;a href=&quot;https://www.statista.com/statistics/558952/in-game-consumer-spending-worldwide/&quot;&gt;source&lt;/a&gt;). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/sharcblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/sharcblog/" rel="alternate" type="text/html" /><updated>2023-02-19T19:06:38+05:30</updated><id>http://localhost:4000/sharcblog/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">Web3 Gaming: The future of Gaming!</title><link href="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/" rel="alternate" type="text/html" title="Web3 Gaming: The future of Gaming!" /><published>2023-01-07T00:00:00+05:30</published><updated>2023-01-07T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/">&lt;p&gt;The global gaming market has been valued at $195 billion in 2021 (&lt;a href=&quot;https://www.grandviewresearch.com/industry-analysis/video-game-market&quot;&gt;source&lt;/a&gt;). In &lt;strong&gt;2021 alone people have spent $54B on in-game items&lt;/strong&gt; (&lt;a href=&quot;https://www.statista.com/statistics/558952/in-game-consumer-spending-worldwide/&quot;&gt;source&lt;/a&gt;). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.&lt;/p&gt;
+
+&lt;!--![Fortnite Game Store](/sharcblog/assets/images/ingame_items_fornite.png){:style=&quot;display:block; margin-left:auto; margin-right:auto&quot;}{: width=&quot;380&quot;}--&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/ingame_items_fornite.png&quot; alt=&quot;title for image&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Fornite in-game items&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;With a traditional gaming setting what would happen is, these purchases that the gamer is making would be very confined to that particular game itself and the gamer wont be able to utilize or use this anywhere outside the game itself. In other words, what that would mean is, &lt;strong&gt;your assets are centralized&lt;/strong&gt; (with the gaming company) and you wont be able to use it anywhere other than inside the game itself! Your asset looses value outside that particular game world! But what if … YES!&lt;/p&gt;
 
 &lt;p&gt;If you are spending money or time and/or doing some crazy things inside the game which makes you eligible for some asset, be it a new weapon or a new outfit or a new charm to hang on your weapon. &lt;strong&gt;Wouldn’t it be great if you could get a discount on your next Starbucks purchase cause you have unlocked that new asset!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/open_marketplace.png&quot; alt=&quot;title for image&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Open Marketplace to trade NFTs&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;Well that’s just an example of what could happen.! Once your assets become decentralized and has value outside the game world, you can &lt;strong&gt;trade your assets for other things in the open marketplace&lt;/strong&gt; pretty legally and get your hands on some crazy deals!&lt;/p&gt;
 
@@ -14,12 +36,24 @@
 
 &lt;p&gt;&lt;strong&gt;For this post, we are going to see:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;What is Web3 Gaming?&lt;/li&gt;
-  &lt;li&gt;Main features of Web3 Gaming&lt;/li&gt;
-  &lt;li&gt;Some examples of Web3 games already out there!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-web3-gaming&quot;&gt;What is Web3 Gaming?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#main-features-of-web3-gaming&quot;&gt;Main features of Web3 Gaming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#some-web3-games&quot;&gt;Some Web3 games!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;what-is-web3-gaming&quot;&gt;What is Web3 Gaming?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/web3gamingsection.jpg&quot; alt=&quot;title for image&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Gaming on Blockchain&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;Web3 gaming essentially &lt;strong&gt;decentralizes traditional gaming&lt;/strong&gt;, such that the activities that the gamer perform in the game world, particularly speaking of owning in-game assets and also the decision-making aspects of gaming are delegated away from a central authority.&lt;/p&gt;
 
@@ -29,6 +63,16 @@
 
 &lt;h2 id=&quot;main-features-of-web3-gaming&quot;&gt;Main features of Web3 Gaming&lt;/h2&gt;
 
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/winwin.jpg&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Web3 Gaming is a win for both gamers and the Gaming Studios!!&lt;/p&gt;
+    
+&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;Ownership&lt;/strong&gt; - With games built on top of the blockchain, the games have a value-exchange model where gamers can completely own in-game assets and collectibles as NFTs and trade them as well using cryptocurrencies. In contrast to traditional gaming, where in-game assets has value and use only inside the game, with web3 game assets, gamers get value of them out in the real world!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Interoperability&lt;/strong&gt; - The assets that the gamers collect in a particular game can be used in other games on the same or different blockchains (depends). Not just that, these game assets that are now available to the gamers can be traded on the open market.&lt;/p&gt;
@@ -36,6 +80,16 @@
 &lt;p&gt;&lt;strong&gt;Game Studios&lt;/strong&gt; - Its also a win for the developers and gaming studios, as they can offer in-game assets like characters, land or others - what is relevant for the particular game - in the form of NFTs and thus allowing them to raise money and build a audience before the actual launch of the game!&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/dalle_rareingameitem.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;A scarce to find asset! (AUTO)&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;The in-game assets that are offered in a Web3 Game, are basically, NFTs. With NFTs, the quantity of each type of the item is fixed and its origin and history can be tracked, this &lt;strong&gt;gives these assets a authenticity and scarcity!&lt;/strong&gt; That makes it actually valuable and thus some assets can be very hard and rare to get your hands-on!&lt;/p&gt;
 
@@ -83,6 +137,16 @@ With 1.5 million total users and $40 million worth of transactions on the platfo
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Web3 gaming is inevitable. Gaming is a growing sector and &lt;strong&gt;giving gamers ownership&lt;/strong&gt; and thus ideally in one word, freedom, is definitely something that the gamers want and thus will happen.!&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/dalle_aguywithjoy.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;A gamer having the fun! (AUTO)&lt;/p&gt;
+    
+&lt;/div&gt;
 
 &lt;p&gt;Also, with web3 gaming, theres a &lt;strong&gt;community of the gamers who are continously active and giving feedback throughout the process of the development&lt;/strong&gt; of the game, and thus the desire is pretty prevalent, which allows the gaming studios / developers build it exactly for the demand. Also, the studios can raise money for in-game items before even the game is launched.&lt;/p&gt;
 
