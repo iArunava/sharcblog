@@ -197,4 +197,4 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (max-width: 900px) { .site-nav { position: absolute; right: 90px; } }
 hr { border: 0; text-align: center; }
-hr:before { content: "\2022 \2022 \2022"; font-size: 20px; color: rgba(0, 0, 0, 0.8); }
+hr:before { content: "\2022     \2022     \2022"; font-size: 15px; color: rgba(0, 0, 0, 0.8); }
