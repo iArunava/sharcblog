@@ -30,9 +30,11 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  tools:
-    output: true
-  languages:
+  #tools:
+    #output: true
+  #languages:
+    #output: true
+  shorts:
     output: true
 
 defaults:
