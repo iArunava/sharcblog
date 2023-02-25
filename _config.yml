@@ -13,11 +13,14 @@ rss: RSS
 
 ### Build settings
 
-url: https://iarunava.github.io
-baseurl: /sharcblog
+url: https://sharc.attim.in
+#url: https://iarunava.github.io
+# ENABLE baseurl when hosting on github pages
+#baseurl: /sharcblog
 
 permalink: pretty
 
+remote_theme: jekyll/minima
 theme: minima
 
 minima:

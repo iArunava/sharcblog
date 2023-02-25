@@ -1,4 +1,186 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/sharcblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/sharcblog/" rel="alternate" type="text/html" /><updated>2023-02-21T21:19:42+05:30</updated><id>http://localhost:4000/sharcblog/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">Web3 Gaming: The future of Gaming!</title><link href="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/" rel="alternate" type="text/html" title="Web3 Gaming: The future of Gaming!" /><published>2023-01-07T00:00:00+05:30</published><updated>2023-01-07T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/">&lt;p&gt;The global gaming market has been valued at $195 billion in 2021 (&lt;a href=&quot;https://www.grandviewresearch.com/industry-analysis/video-game-market&quot;&gt;source&lt;/a&gt;). In &lt;strong&gt;2021 alone people have spent $54B on in-game items&lt;/strong&gt; (&lt;a href=&quot;https://www.statista.com/statistics/558952/in-game-consumer-spending-worldwide/&quot;&gt;source&lt;/a&gt;). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/sharcblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/sharcblog/" rel="alternate" type="text/html" /><updated>2023-02-26T01:19:55+05:30</updated><id>http://localhost:4000/sharcblog/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">What is NFT?</title><link href="http://localhost:4000/sharcblog/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/" rel="alternate" type="text/html" title="What is NFT?" /><published>2023-01-14T00:00:00+05:30</published><updated>2023-01-14T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/">&lt;p&gt;An &lt;strong&gt;unique and scarce asset&lt;/strong&gt; in the physical world is comparable to NFT. But with a asset in the physical world, you can take it and it sits in your house or similar. And there’s never a question of ownership as it resides with you. Where is Mr. Karkman’s WWII rifle? It sits in Mr. Housmith’s residence. So it should now obviously belong to Mr. Housmith.&lt;/p&gt;
+
+&lt;p&gt;With assets in the digital world. Its &lt;strong&gt;difficult to represent ownership&lt;/strong&gt;. You can have a jpeg of your cats and so you might say that you own that image. You send the image to your neighbor who wants to see your cat. And now she has access to the image. And she can claim that she owns the image. She shares it on social. And some cat guy gets obssessed and downloads it from the internet. And shares it in his group and claims its his image.&lt;/p&gt;
+
+&lt;p&gt;You probably have seen people watermarking their PDFs, images, videos to represent ownership. And obviously there are tools that can be used to remove watermarks from anything. And with recent research in AI, we can remove watermarks or for that matter any kind of marks from images without any hassle and with no marks left on the image that gives off that there was a watermark.&lt;/p&gt;
+
+&lt;p&gt;If you have noticed something in the 2010s internet era, &lt;strong&gt;community would call out if they see a copycat trying to claim something that is not theirs&lt;/strong&gt;. Lets say, if there’s some account with a lot of followers, posting a picture(or other asset). And that gets copied by someone and someone tries to claim its theirs. That doesnt work!! Cause everybody knows its not their work! Everybody saw that asset come out of the popular person’s account. So ideally, this second guy cant claim its his, cause everybody knows the truth. This same thing happens with Linkedin Posts nowadays, where if one post is getting a lot of traction, someone else would just copy paste the entire post without giving credits or anything. The people who know that the other guy is just copying cause they have seen the original post. And there might be some who didnt come across the original ones and thus they keep thinking that this copied one is the original one.!&lt;/p&gt;
+
+&lt;p&gt;As you see, it is very &lt;strong&gt;difficult to represent ownership in the digital world&lt;/strong&gt;. Everybody can get their hands on the copy of your image, file, audio, video and other data/assets and can easily claim it is theirs.&lt;/p&gt;
+
+&lt;p&gt;This is where blockchain and thus, NFT comes in.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In this article, we are going to see:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-nft&quot;&gt;What is NFT?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-are-nfts-used-for&quot;&gt;What are NFTs used for?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#example-of-nfts&quot;&gt;Example of NFTs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-is-nft&quot;&gt;What is NFT?&lt;/h2&gt;
+
+&lt;p&gt;NFT stands of Non-Fungible Token. &lt;strong&gt;They represent ownership of unique digital items&lt;/strong&gt;. We can tokenize any digital asset such as art, pictures, moments, real-estate, game assets, literally anything digital. Ownership of these tokens are secured by the blockchain and nobody can modify the records of these ownership. Just like i was telling that if a post is now seen my millions and now somebody else try to come in and copy paste the same post and try to claim its theirs, nobody would believe this other guy. &lt;strong&gt;Everybody knows what is the truth.&lt;/strong&gt; Similarly, anytime somebody purchases something, or any kind of activity/transaction is recorded in the blockchain. And that means, that everybody now is aware of the truth. And one person claiming something different wont effect the truth.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Non-fungible&lt;/strong&gt; is an economic term that is used to describe assets which have unique properties, and thus are &lt;strong&gt;not interchangeable for other similar items&lt;/strong&gt;. Like the chair you sit at, or a computer, that is to say any property with unique properties. &lt;strong&gt;Fugible items&lt;/strong&gt; on the other hand &lt;strong&gt;can be exchanged because their value defines them and not their properties&lt;/strong&gt;. Example would be currencies, like Dollars($)/Indian Rupee, 1Rupee is exchangeable for another 1Rupee.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-nfts-used-for&quot;&gt;What are NFTs used for?&lt;/h2&gt;
+
+&lt;p&gt;NFTs are currently being used to achieve different use-cases! Some are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#digital-content&quot;&gt;Digital Content&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#in-game-assets&quot;&gt;In-Game assets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#domain-names&quot;&gt;Domain Names&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#physical-items&quot;&gt;Physical items&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nft-backed-loans&quot;&gt;NFT-backed Loans&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tokengating&quot;&gt;Tokengating&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;digital-content&quot;&gt;Digital Content&lt;/h3&gt;
+
+&lt;p&gt;The Content creators making content, be it art, written content, audio or video helps make money for the platform which sells ads to the creators content consumers. They get exposure in return. Which is good. Exposure is required but if the unique pieces of content that the creators work on throughout gets them some money that could help them lead better lives, wouldn’t that be great!&lt;/p&gt;
+
+&lt;p&gt;Some platforms like &lt;a href=&quot;youtube.com&quot;&gt;Youtube&lt;/a&gt; allow creators to make money off the ads that are running on their content. But not all. NFTs come in exactly at that place, where the creators dont hand over the ownership of their content to the platform they are using to publicise it.&lt;/p&gt;
+
+&lt;p&gt;Apart from, NFT enabling creators to sell their content to interested buyers who are interested in the art/any form of content that the creator has made. There’s a new concept of Royalties where the creator of the content can make some money everytime the content is sold. So, without royalties, the creator just makes money when the content is sold first time, as the owner. With royalties, the creator gets royalties everytime the content is transacted irrespective of the new owner, as it is embedded in the chain who the original creator is.&lt;/p&gt;
+
+&lt;p&gt;Royalties is still a developing concept, at the time of writing this blog. The idea is, if you program royalties in your NFT project then you can just sit back and earn every time a purchase is made!! Right now, it lacks accuracy and creators dont get paid what they deserve, but this is gonna fixed with time. As long as you have opt in royalties programitacally you are good! &lt;a href=&quot;https://eulerbeats.com&quot;&gt;EulerBeats&lt;/a&gt; earn an 8% royalty every time the NFT is sold. Recently Opensea also opted in for creator royalties &lt;a href=&quot;/shorts/2023-02-19-opensea-zero-free/&quot;&gt;read&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;in-game-assets&quot;&gt;In-game assets&lt;/h3&gt;
+
+&lt;p&gt;With Web3, gaming will take on new heights! Iv explained in-detail how web3 is going to effect gaming here - &lt;a href=&quot;/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/&quot;&gt;Web3 Gaming&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In brief, you can own and trade the ingame assets that you purchase or receive in the game. And it can be used in the physical-world to get discounts or can act as passes as these in-game assets are NFTs!&lt;/p&gt;
+
+&lt;h3 id=&quot;domain-names&quot;&gt;Domain Names&lt;/h3&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/arcethens.png&quot; alt=&quot;ENS arc.eth&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;arc.eth&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;The ENS - Ethereum Name Service provides easier-to-remember names for your eth wallet like arc.eth. So instead of remembering someone wallet address like 0x829382… they could just simply say “Hey my wallet is arc.eth” and it becomes much more convienient for you to send or receive! Pretty similar to Domain names for IP addresses!&lt;/p&gt;
+
+&lt;p&gt;ENS utilizes NFTs. So you can trade ENS on NFT marketplaces!! CrazY! It provides with all the features that you get with your wallet, as its just a mapping! To mention a few:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Receive cryptocurrency and other NFTs&lt;/li&gt;
+  &lt;li&gt;Point to a decentralized website like &lt;a href=&quot;ethereum.eth&quot;&gt;ethereum.eth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Store small arbritary information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;physical-items&quot;&gt;Physical Items&lt;/h3&gt;
+
+&lt;p&gt;There has been some projects where there has been efforts on converting physical items to their digital counterparts! Like where if you buy a physical item like a car or shoe or real-estate you would receive an NFT as well that can essentially act as a proof of the ownership of that asset. One such example would be of Nike, they recently launched &lt;a href=&quot;https://www.swoosh.nike/&quot;&gt;swoosh&lt;/a&gt; a web3 platform to sell NFT products!&lt;/p&gt;
+
+&lt;p&gt;Additionally, you can get the deeds when you make a purchase like a car or real-estate in the form of NFTs! And since your wallet is completely secure it can also act as a key to different physical assets you own!&lt;/p&gt;
+
+&lt;h3 id=&quot;nft-backed-loans&quot;&gt;NFT-backed loans&lt;/h3&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/makerdao.png&quot; alt=&quot;MakerDAO&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;MakerDAO&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;There are DeFi applications &lt;a href=&quot;#&quot;&gt;Decentralized Finance&lt;/a&gt; that let you borrow money using collaterals! Example of such a platform is &lt;a href=&quot;https://makerdao.com/en/&quot;&gt;MakerDAO&lt;/a&gt;. They allow you to borrow DAI &lt;a href=&quot;#&quot;&gt;Stablecoin&lt;/a&gt; by keeping other cryptocurrencies as collateral. Like ETH, or BTC. The collateral gurantees that the lender gets paid even if the borrower is not able to return the amount.&lt;/p&gt;
+
+&lt;p&gt;However it can be the case that you dont have that much amount to keep as collateral, but you own a valuable NFT. So instead of keeping fungible-asset as a token you can ideally be able to keep a NFT as a collateral, which has a required value and that should enable you take the loan as well!&lt;/p&gt;
+
+&lt;p&gt;Similarly, if you have NFT of physical assets that you own, you would be able to use that as collaterals!&lt;/p&gt;
+
+&lt;h3 id=&quot;tokengating&quot;&gt;Tokengating&lt;/h3&gt;
+
+&lt;p&gt;Tokengating is a way to provide access to gated communities/private chat servers/even events that are happening in the physical world with NFTs! So you would be able to access a community/event only if you have access to a certain NFT. For a physical event, it can serve the purpose of buying a ticket.&lt;/p&gt;
+
+&lt;p&gt;The same NFT can be used to provide access to content/community/event across different websites or different events. You just have to connect to your wallet and verify that you own the required token and you are good to go! As NFT is all-about-ownership it is one of the most ideal use cases! Communities like Neo Tokyo gate some of their channels and priviledges to only members who have bought certain NFTs! This helps in true community generation and loyalty.&lt;/p&gt;
+
+&lt;p&gt;The creator also gets to decide the scarcity of the NFT. For example, if the NFT is used to tokengate a movie premiere, then the creator can create 200 exact replicas of the NFT, that would be made available to 200 individuals. Sometimes they can be a bit different like to contain different seat numbers or some special privileges!&lt;/p&gt;
+
+&lt;h2 id=&quot;example-of-nfts&quot;&gt;Example of NFTs&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/sharcblog/assets/images/blur.png&quot; alt=&quot;Blur&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Blur NFT Marketplace&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;You can visit marketplaces like &lt;a href=&quot;opensea.io/&quot;&gt;Opensea&lt;/a&gt; or &lt;a href=&quot;https://blur.io/&quot;&gt;Blur&lt;/a&gt; and checkout the most recent NFT projects from different creators! A few projects and token worth mention would be:&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+
+        &lt;video autoplay=&quot;&quot; loop=&quot;&quot; controls=&quot;&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;
+        &lt;source type=&quot;video/mp4&quot; src=&quot;/sharcblog/assets/videos/sneakernft.mp4&quot; alt=&quot;NFT Sneaker&quot; /&gt;
+        &lt;/video&gt;
+
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;NFT Sneaker&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.ens.domains/name/arc.eth/&quot;&gt;arc.eth&lt;/a&gt; - ENS example&lt;/li&gt;
+  &lt;li&gt;An NFT shoe using AI - which enables you to the physical shoe itself &lt;a href=&quot;https://www.metagrail.co/auctions/91cf83fb-3477-4155-aae8-6dcb9b853397&quot;&gt;Metagrail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In game items &lt;a href=&quot;https://market.decentraland.org/&quot;&gt;Decentraland&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A NFT ticket that gives you access to physical world events &lt;a href=&quot;https://yh.io/&quot;&gt;yh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Digital Identity &lt;a href=&quot;https://photochromic.io/&quot;&gt;Photochromic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Buy physical goods &lt;a href=&quot;https://www.tangible.store/&quot;&gt;Tangible&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cryptopunks - A digital collectible &lt;a href=&quot;https://cryptopunks.app/&quot;&gt;Cryptopunks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Degree Certificates as NFT &lt;a href=&quot;https://www.degreecert.com/&quot;&gt;Degreecert&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;NFTs allows us to prove ownership of digital assets.&lt;/strong&gt; There has been a lot of activity with NFTs. Billions have been spent on NFT transactions. With the recent media, it might seem like its hype and about monkey pictures and only art, but NFTs are much more than that! Decentralization is much more than that, and NFTs will play an integral part in decentralization.&lt;/p&gt;
+
+&lt;p&gt;The world has already been using NFTs to achieve a lot, as we saw some examples above. Lot of people have made fortunes with NFTs. And many more to come. You dont have to be a creator to understand NFTs, &lt;strong&gt;its for anybody who would require ownership of assets&lt;/strong&gt; in the Web3 era :)&lt;/p&gt;
+
+&lt;!--
+Comparable to NFT in the physical-world in a asset that is unique and scrace. 
+
+You get your hands-on your grandfather's rifle. Who fought WWII with it. And now it stands as a symbol in the western wall of your house. You decide to put it a price on it. And a interested buyer takes it away from you.
+
+Here we can think of the rifle as an NFT. Its an asset. An NFT is an asset. That is unique.
+
+
+
+Your grandpa was a world-famous scientist, named, Robert Nakrot. Robert's genetically engineered this mammal, that was a hybrid between a mouse, spider and lizard. Uniquely enough, it had some interesting features. This animal recently passed away. And you have got your hands on it
+
+----
+You got your hands on one of the Mark IV deep diving suits. You find yourself on the beach next day. Ready to rock and roll. You put your suit on. Half naked people starring at you! They are like who is this?! You dont care.! You do what you are there for! Put your suit on.! And start running towards the water! People are still starring! Some have pulled their phones out by now. You keep running. And a few minutes later you deep inside the ocean! Ahh! What a feeling! You can see multiple school of fish around you! Some shadows you can see at some distance.
+
+Fast-forward.
+
+You come out of the ocean, with a part of ship that was sunk 1000s of years back! The guys see you coming out of the water and come running towards you. You remove your helmet and smile at them :) You stood their holding your knee, a few deep breaths!
+
+Then you yell-out! &quot;This is a part of ship that sunk 1000s of years back!&quot; You hold it high in your hands. They see it glowing! You yell. Five thousand dollars! And its yours to keep! 
+
+You get a few offers and you make the sale :)
+
+What is the point of this?
+
+That part of the ship is unique and authentic. Nobody on 
+--&gt;</content><author><name></name></author><category term="web3" /><category term="nft" /><category term="blockchain" /><category term="token" /><category term="digital" /><summary type="html">An unique and scarce asset in the physical world is comparable to NFT. But with a asset in the physical world, you can take it and it sits in your house or similar. And there’s never a question of ownership as it resides with you. Where is Mr. Karkman’s WWII rifle? It sits in Mr. Housmith’s residence. So it should now obviously belong to Mr. Housmith.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/sharcblog/assets/images/web3gaming_header.jpg" /><media:content medium="image" url="http://localhost:4000/sharcblog/assets/images/web3gaming_header.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Web3 Gaming: The future of Gaming!</title><link href="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/" rel="alternate" type="text/html" title="Web3 Gaming: The future of Gaming!" /><published>2023-01-07T00:00:00+05:30</published><updated>2023-01-07T00:00:00+05:30</updated><id>http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming</id><content type="html" xml:base="http://localhost:4000/sharcblog/web3/gaming/games/blockchain/nft/token/2023/01/07/web3-gaming/">&lt;p&gt;The global gaming market has been valued at $195 billion in 2021 (&lt;a href=&quot;https://www.grandviewresearch.com/industry-analysis/video-game-market&quot;&gt;source&lt;/a&gt;). In &lt;strong&gt;2021 alone people have spent $54B on in-game items&lt;/strong&gt; (&lt;a href=&quot;https://www.statista.com/statistics/558952/in-game-consumer-spending-worldwide/&quot;&gt;source&lt;/a&gt;). Thats quite a bit of in-game purchases. For those of you who are new to the modern gaming world, in-game purchases are items that can be bought to enhance certain things that are available in the game. Like weapons, outfits, spells, charms, coins and so on. Going forward lets call these assets.&lt;/p&gt;
 
 &lt;!--![Fortnite Game Store](/sharcblog/assets/images/ingame_items_fornite.png){:style=&quot;display:block; margin-left:auto; margin-right:auto&quot;}{: width=&quot;380&quot;}--&gt;
 

@@ -204,4 +204,4 @@ hr:before { content: "\2022     \2022     \2022"; font-size: 15px; color: rgba(0
 .center { display: block; margin-left: auto; margin-right: auto; }
 
 .image-wrapper { text-align: center; width: 380px; }
-.image-wrapper .image-caption { color: #828282; margin-top: 0.6px; font-size: 90%; }
+.image-wrapper .image-caption { text-align: center; color: #828282; margin-top: 0.6px; font-size: 90%; }

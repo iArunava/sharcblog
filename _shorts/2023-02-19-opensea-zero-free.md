@@ -6,7 +6,7 @@ image: /assets/images/shorts/opensea_zerofees.png
 layout: short
 ---
 
-Opensea went 0 platform fee!! Their primary source of revenue! Hhahahah!
+Opensea reduced their platform fee to 0!! Their primary source of revenue! Hhahahah!
 
 Feb 18 Opensea tweeted that they are going to decrease their platform fees to 0%. Which was earlier at 2.5% of each transaction! Now doing this has cut down their primary source of revenue. 
 

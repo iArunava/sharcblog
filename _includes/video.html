@@ -1,0 +1,19 @@
+<!-- _includes/image.html -->
+<div class="image-wrapper center" >
+    {% if include.url %}
+    <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
+    {% endif %}
+
+        <video autoplay loop="" controls="" width="640" height="480">
+        <source type="video/mp4" src="{{ include.img | relative_url }}" alt="{{ include.title }}">
+        </video>
+
+    {% if include.url %}
+    </a>
+    {% endif %}
+    {% if include.caption %}
+        <p class="image-caption">{{ include.caption }}</p>
+    {% endif %}
+</div>
+
+
