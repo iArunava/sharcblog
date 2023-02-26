@@ -6,7 +6,7 @@ image: /assets/images/nftgallery_oncyber.png
 layout: post
 ---
 
-An **asset in the physical world that you own is comparable to a NFT**, like land, car, or house. It can be **unique and scarce, but not necessarily!** With an asset in the physical world, you can take it and it sits in your house or similar. And there's never a question of ownership as it resides with you. Where is Mr. Karkman's WWII rifle? It sits in Mr. Housmith's residence. So it should now obviously belong to Mr. Housmith. 
+An **asset in the physical world that you own is comparable to a NFT**, like land, car, or house. It can be **unique and scarce, but not necessarily!** Think about that pencil that you bought yesterday that is also an asset that you own, but that is neither unique not scarce. With an asset in the physical world, you can take it and it sits in your house or similar. And there's never a question of ownership as it resides with you. Where is Mr. Karkman's WWII rifle? It sits in Mr. Housmith's residence. So it should now obviously belong to Mr. Housmith. 
 
 With assets in the digital world. Its **difficult to represent ownership**. You can have a jpeg of your cat and so you might say that you own that image. You send the image to your neighbor who wants to see your cat. And now she has access to the image. And she can claim that she owns the image. She shares it on social. And some cat guy gets obssessed and downloads it from the internet. And shares it in his group and claims its his image.
 
