@@ -2,7 +2,7 @@
 title: "What is NFT?"
 subtitle: An Introduction
 categories: web3 nft blockchain token digital
-image: /assets/images/nftgallery_oncyber.png
+image: /assets/images/nftgallery_oncyber_compressed.jpg
 layout: post
 ---
 
@@ -93,7 +93,7 @@ Royalties is still a developing concept, at the time of writing this blog. The i
 
 {% include image.html 
            title="MakerDAO"
-           img="/assets/images/decentraland_ingameassets.png"
+           img="/assets/images/decentraland_ingameassets_compressed.jpg"
            caption="Decentraland Marketplace."
 %}
 
