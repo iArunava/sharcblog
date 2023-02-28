@@ -198,6 +198,12 @@ The world has already been using NFTs to achieve a lot, as we saw some examples 
 
 
 
+<!--
+
+References:
+https://ethereum.org/en/nft/
+
+-->
 
 
 <!--
