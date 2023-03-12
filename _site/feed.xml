@@ -1,4 +1,274 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-26T19:36:50+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">What is NFT?</title><link href="http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/" rel="alternate" type="text/html" title="What is NFT?" /><published>2023-01-14T00:00:00+05:30</published><updated>2023-01-14T00:00:00+05:30</updated><id>http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft</id><content type="html" xml:base="http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/">&lt;p&gt;An &lt;strong&gt;asset in the physical world that you own is comparable to a NFT&lt;/strong&gt;, like land, car, or house. It can be &lt;strong&gt;unique and scarce, but not necessarily!&lt;/strong&gt; Think about that pencil that you bought yesterday that is also an asset that you own, but that is neither unique not scarce. With an asset in the physical world, you can take it and it sits in your house or similar. And there’s never a question of ownership as it resides with you. Where is Mr. Karkman’s WWII rifle? It sits in Mr. Housmith’s residence. So it should now obviously belong to Mr. Housmith.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-11T19:21:21+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">DeFi - The future of Finance</title><link href="http://localhost:4000/web3/blockchain/token/defi/finance/decentralized/2023/01/23/defi/" rel="alternate" type="text/html" title="DeFi - The future of Finance" /><published>2023-01-23T00:00:00+05:30</published><updated>2023-01-23T00:00:00+05:30</updated><id>http://localhost:4000/web3/blockchain/token/defi/finance/decentralized/2023/01/23/defi</id><content type="html" xml:base="http://localhost:4000/web3/blockchain/token/defi/finance/decentralized/2023/01/23/defi/">&lt;p&gt;With the traditional financial system that we have in place today it is difficult to get a lot of things done. Done in the right way, as well as in time, as well as with minimal funds. Lot of things in today’s banking system that exists in today’s banking system/other financial institutions are running technologies that are decades old and have not been upgraded. There’s space for lot of innovation. But that is not why traditional finance is gonna lose its edge, its cause of its &lt;strong&gt;inefficiency involved in what its responsibilities are.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/gamestopshortsqueeze.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Gamestop Short Squeeze Incident (source: Wikipedia)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Today’s &lt;strong&gt;financial institutions are run by a group of entitiled individuals behind closed doors and these critical decisions impact billions of people.&lt;/strong&gt; How do you trust their decisions? Why should you trust them with your money? With no say over where your money goes, such institutions can lend your money to high-risk borrowers and thus you have to trust them to not mismanage your money. And a group of people making decisions in a closed space usually leads to &lt;strong&gt;billion-dollar banking scandals&lt;/strong&gt;. In addition to that, with a centralized authority in place and with a control over the market, they can close down markets at will! &lt;a href=&quot;https://insider.finology.in/finance/game-stop-saga&quot;&gt;source - GameStop Saga&lt;/a&gt; Also, with such a traditional setting in-place, &lt;strong&gt;markets have to close as human labourers need breaks and thus it often runs in the business hours of specific time-zones.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/bankslongprocessingtime.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;A consumer showing distress and asking clarification for unusual high processing time.(source: Guardian)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;The responsibilities involved by financial institutions like &lt;strong&gt;settlement of stocks, bonds, and others takes a really long time to clear&lt;/strong&gt;, in the matter of days and &lt;strong&gt;human capital involved in these processes are also massive, and thus the processes gets more expensive on the end customers&lt;/strong&gt;, you and i. And &lt;strong&gt;more so, when it comes to international banking and remittance services.&lt;/strong&gt; Banks have to go through and comply with the laws and regulations of different governments and financial institutions overseas when doing transactions internationally which leads to this delay and expense in cost.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/unbanked.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;World top 5 unbanked countries as of 2021.(source: CFTE)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;There’s &lt;strong&gt;millions across the globe that doesnt have a bank account and dont have proper access to financial services.&lt;/strong&gt; Such decisions taken by today’s financial institutions will impact the livelihood of these people as they &lt;strong&gt;wont be now eligible to get paid.&lt;/strong&gt; Getting a &lt;strong&gt;bank account is intensely tied with your identity&lt;/strong&gt;, as well. All in all, trusting some individuals with our money and with the entitlement to choose who gets access to financial services and who does not is not something that is acceptable.&lt;/p&gt;
+
+&lt;p&gt;This is where DeFi comes in.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In this article, we will see:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-defi&quot;&gt;What is DeFi?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-can-you-do-with-defi&quot;&gt;What can you do with DeFi?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-does-defi-work&quot;&gt;How does DeFi work?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;what-is-defi&quot;&gt;What is DeFi?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/importanceofdefi.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Reddit Conversation - Importance of DeFi.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;DeFi acts as an &lt;strong&gt;umbrella for the various financial products and services that the decentralized world has to offer and will offer in the future.&lt;/strong&gt; DeFi will be able to &lt;strong&gt;do everything that traditional finance ie CeFi (Centralized Finance) can and more.&lt;/strong&gt; CeFi is built on proprietary technologies and algorithms that each company has to work on their own. The backbone for DeFi is written using OSS (Open Source Software) that anybody can audit and thus is much less prone to security issues and this enables intercommunication between different dApps (Decentralized Apps). One such backbone is, Ethereum. Almost all major dApps are written on the Ethereum Blockchain. Since the backbone on which the transactions happen has already been defined anybody can utilize this to build their own DeFi applications, and thus this makes the barrier for new people to enter this industry far-lower than what it has been before where you have to work out everything from the very start.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/beyourownbank_loopring.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Tweet from Loopring.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;With DeFi, &lt;strong&gt;you are in control of your money!&lt;/strong&gt; You say where your money goes and how it is spent. &lt;strong&gt;You dont need to verify your identity to have a DeFi account that can make transactions.&lt;/strong&gt; All you need is a phone and internet connection! Viola! You can send and receive money to anywhere in the world! And more so, the &lt;strong&gt;transaction can happen in minutes&lt;/strong&gt; :) The &lt;strong&gt;transactions that are happening are open to all and can be audited anytime.&lt;/strong&gt; This doesnt mean that anybody knows what you are spending on. &lt;strong&gt;Transaction activity is pseudonymous&lt;/strong&gt;, thus everybody gets to know how the money is flowing from an account to another, or if a particular wallet has been acting suspiciously, but not their real-life identity. A lot of the problem that was mentioned above has been completely addressed with DeFi. Also, with DeFi, a lot of things are automated completely to the point where there wont be a need for markets to close at all :)&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/bitcoinethereum.jpg&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Bitcoin and Ethereum.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;Bitcoin&lt;/a&gt; started the true DeFi movement. It &lt;strong&gt;allowed people who dont trust each other to transact across the globe without a trusted intermediary.&lt;/strong&gt; They way it works is by everybody &lt;strong&gt;agreeing to a ledger which acts as the source of truth&lt;/strong&gt;, and no single/group of malicious actors can tamper with it. &lt;strong&gt;Bitcoin is open to anyone and everybody is treated equally irrespective of their backgrounds and nationalities.&lt;/strong&gt; More to start transacting you dont need to verify your identity or anything. &lt;a href=&quot;&quot;&gt;Ethereum&lt;/a&gt; takes this concept further where it &lt;strong&gt;makes the money programmable&lt;/strong&gt; using &lt;a href=&quot;&quot;&gt;Smart Contracts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-you-do-with-defi&quot;&gt;What can you do with DeFi?&lt;/h2&gt;
+
+&lt;p&gt;With DeFi you can do pretty much &lt;strong&gt;everything that you can do with Centralized Finance&lt;/strong&gt; and probably more in a more open and secure way. Say you want to &lt;strong&gt;trade, invest to build your portfolio, or you can get insurance, you can borrow money using collaterals, lend money and gain interests&lt;/strong&gt;, and obviously the basic use cases such as send/receive money locally or from around the globe and getting loans (decentralized loans).&lt;/p&gt;
+
+&lt;p&gt;Let’s look at a few companies who are enabling DeFi and stand-out considerably among others:&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/uniswap.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Uniswap - Decentralized Exchange.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://uniswap.org/ecosystem&quot;&gt;&lt;strong&gt;Uniswap&lt;/strong&gt;&lt;/a&gt;: &lt;strong&gt;Decentralized Crypto Exchange (DEX) that is run on Smart Contracts without any single governing central authority.&lt;/strong&gt; In centralized platforms like &lt;a href=&quot;&quot;&gt;Coinbase&lt;/a&gt; and &lt;a href=&quot;&quot;&gt;Binance&lt;/a&gt;, your crypto and private keys is held for you by these single authorities for security, trades are governed by these single authorities and they follow the &lt;a href=&quot;&quot;&gt;order-book system&lt;/a&gt; to facilitate trading. Uniswap on the other hand is not governed by a single authority and has its own governance token &lt;a href=&quot;&quot;&gt;UNI&lt;/a&gt;. It follows the Automated Liquidity Protocol to facilitate trades. Its open-source and you can list your tokens free of charge on the platform, contrary to platforms which are centralized where you need to pay to list token for trading. With Uniswap you dont give up your private keys like centralized exchanges which keeps you safe if ever the exchange gets hacked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/pooltogether.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;PoolTogether - Get rewards on saving your money.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pooltogether.com/&quot;&gt;&lt;strong&gt;PoolTogether&lt;/strong&gt;&lt;/a&gt;: Allows you to &lt;strong&gt;deposit your money and win prizes on it.&lt;/strong&gt; Your money is pooled with others and at the end one lucky winner from the pool is given a award! And this is where it gets amazing, if you dont win the pool you get your entire money back! Its a no risk gamble :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/aave.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Aave - Lend and Borrow Crypto.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://aave.com/&quot;&gt;&lt;strong&gt;Aave&lt;/strong&gt;&lt;/a&gt;: Allows you to &lt;strong&gt;borrow or lend cryptocurrency without going through centralized financial institutions.&lt;/strong&gt; Other than Ethereum, Aave is also available in Avalanche, Optimism, Polygon, Arbitrum and Aave Arc. For getting loans, one has to put collaterals which can be some Stablecoin or even real-world assets. For real-world assets, Aave ties up with Centrifuge to tokenize real-world assets first and then you can use them as collaterals. Aave is a DAO and its governance token is aToken. Same as the borrowing and lending model, the borrower has to pay interest and the lender gets the interest.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.augur.net&quot;&gt;Augur&lt;/a&gt;: Its a &lt;strong&gt;decentralized platform in the prediction market.&lt;/strong&gt; You vote on the outcome on an event and if you are right then you get rewards based on that. You can strenghthen your vote by putting in more value for it. Based on your bid, you get more rewards, if you are wrong then you lose the money that you have put in.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/gitcoin.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Gitcoin - Crowdfund your projects!&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;gitcoin.co&quot;&gt;Gitcoin&lt;/a&gt;: Allows you to &lt;strong&gt;crowdfund for your project ideas.&lt;/strong&gt; It helps connect projects with suitable donors. As well as it helps developers to get paid while contributing to their favorite open-source projects! Its a dream for many developers. There are projects right now that partially as well as completely supported by Gitcoin! It employs Quadratic Funding (apart from direct funding) where the projects that the community deems more important have better access to the community funds.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/tornadocash.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;TornadoCash - Make anonymous transactions.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ipfs.io/ipns/tornadocash.eth/&quot;&gt;Tornado Cash&lt;/a&gt;: Allows to &lt;strong&gt;make transactions with complete anonymity.&lt;/strong&gt; Its a noncustodial platform where the money deposited by the user goes into TornadoCash’s liquidity pool which acts as a cryptocurrency mixer, thus it becomes impossible to track the links between deposit and the withdrawal addresses. The user is given with a secret hash while depositing the amount which they use at the time of withdrawal to prove the ownership over the funds. TornadoCash was sanctioned by the US treasury on August 7, 2022 &lt;a href=&quot;https://home.treasury.gov/news/press-releases/jy0916&quot;&gt;read more&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;how-does-defi-work&quot;&gt;How does DeFi work?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/blockchainplatformslist_reviews_gartner.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;A few of the popular blockchain that are listed in Gartner Blockchain reviews.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;DeFi Applications &lt;strong&gt;leverages the blockchain technology to enable decentralization.&lt;/strong&gt; It thus leverages cryptocurrency and the power of smart contracts in chains like Ethereum to replace intermediaries and program certain decisions on how the money is going flow. A smart contrat is a type of Ethereum account that can store funds and send/receive them based on certain conditions. As everything in the chain, once deployed everybody can audit the contract and it cannot be tampered with, to update a contract it has to deployed as a new block in the chain. The openess of a contract allows malicious contracts to soon come under the public inspection.&lt;/p&gt;
+
+&lt;p&gt;Currently, &lt;strong&gt;majority of the dApps are being built on Ethereum.&lt;/strong&gt; That means many of these dApps can talk with each other cause the backbone for them is the same. No one owns Ethereum or the smart contracts and thus no one can change the rules for a single person or no single central authority has the power to change laws as they wish for their benefit like with centralized financial institutions.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/centralizedbankarebad.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Reddit conversation about centralized financial institutions.&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Centralized financial institutions as discussed comes with a lot of drawbacks. While its extremely benificial for the people who are inside these institutions, but its not so much for the people outside. As the outside people will constantly be taken advantage of and played with by the people in power. Treating everybody equally and allowing privacy through DeFi, among other major features will enable DeFi as the future of finance. Its truly &lt;strong&gt;inevitable.&lt;/strong&gt; :)&lt;/p&gt;
+
+&lt;!--
+Points:
+
+Cons of traditional Finance:
+---
+- Settlement of stocks, bonds and other financial instruments takes days to clear and requires a massive amount of human capital involved in the process. 
+-/ Key decisions impacting millions if not billions of people are /made behind the closed doors by a group of privileged few. 
+-/ Billion-dollar banking scandals
+-/ Massive inefficiencies and high cost when it comes to international banking and remittance services
+-/ Unequal access to financial services with billions of unbanked people across the globe. Financial services can block you from getting paid.
+- hiring thousands of employees just to keep maintaining inefficient processes and being compliant with ever-changing banking regulations.
+- A super high barrier to entry for the new players making it almost impossible to start a new financial company without access to the massive amount of capital, stifling innovation.
+-/3 built with proprietary technologies and algorithms that each company has to make from scratch. 
+-/ Governments and centralized institutions can close down markets at will.
+- premium to financial services because intermediary institutions need their cut.
+-/ You have to trust companies not to mismanage your money, like lend to risky borrowers.
+-/ Financial activity is tightly coupled with your identity.
+---
+
+
+Flow:
+-1 Cons of traditional finance, this is where DeFi comes in.
+-2 In this article we are going to cover
+-3 What is DeFi
+-4 What can you do with DeFi
+-5 How does DeFi work?
+
+What is DeFi?
+- A system that can provide access to well-known financial services such as payments, lending, borrowing and trading in a more efficient, fair and open way.  
+
+- Permissionless  – as everyone with a browser and the Internet connection can access them. There is no document verification, no need to provide income statements, nationality or race doesn’t matter – everyone is treated in the exact same way. 
+
+- Censorship-resistant – as no other parties can deny us access to these services.
+- Open – as everyone can build a new defi application and contribute to the ecosystem. In contrast to traditional finance, new applications can leverage the existing protocols and build on top of existing solutions. 
+- Efficient – as all operations are settled almost immediately. It doesn’t matter that counterparties may be in completely different geographic locations with inconsistent laws and regulations. On top of this, most of DeFi protocols can operate with no or minimal human involvement. 
+- The idea is to allow anyone with internet access to lend, borrow and bank without going through middlemen. 
+
+
+What can you do with DeFi.
+- Borrow and Lend: Compound
+
+Automated Token Exchange: Uniswap
+
+Prediction Markets: Augur
+
+Synthetic Assets: Synthetix
+
+No-loss savings games: PoolTogether
+
+- 
+
+
+How does it Work?
+- permissionless means anyone can deploy transparent code and users can interact with each other through computer code without the need for intermediaries such as banks, brokers and lawyers etc.
+- cryptocurrencies and smart contracts to provide services that don't need intermediaries.
+- art contract replaces the financial institution in the transaction. A smart contract is a type of Ethereum account that can hold funds and can send/refund them based on certain conditions.
+- Contracts are also public for anyone to inspect and audit. This means bad contracts will often come under community scrutiny pretty quickly.
+
+Conclusion
+- Inevitable :)
+--&gt;
+
+&lt;!---
+
+Ref:
+https://www.coindesk.com/business/2021/02/04/what-is-uniswap-a-complete-beginners-guide/
+
+
+Today's **financial institutions are run by a group of entitiled individuals behind closed doors and these critical decisions impact billions of people.** How do we trust their decisions? Why should we trust their decisions? And more than decisions why should you trust them with your money? With such systems, its possible for the government to print more money at will! You know what it does to the ones who dont have access to money printing services? It devalues our overall wealth overtime and it leads to inflation. Governments printing money is not something new here are a few sources [] Such incidents and others lead to **billion-dollar banking scandals**.
+
+--&gt;</content><author><name></name></author><category term="web3" /><category term="blockchain" /><category term="token" /><category term="defi" /><category term="finance" /><category term="decentralized" /><summary type="html">With the traditional financial system that we have in place today it is difficult to get a lot of things done. Done in the right way, as well as in time, as well as with minimal funds. Lot of things in today’s banking system that exists in today’s banking system/other financial institutions are running technologies that are decades old and have not been upgraded. There’s space for lot of innovation. But that is not why traditional finance is gonna lose its edge, its cause of its inefficiency involved in what its responsibilities are.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/banners/defi_article_banner_final2.png" /><media:content medium="image" url="http://localhost:4000/assets/images/banners/defi_article_banner_final2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What is NFT?</title><link href="http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/" rel="alternate" type="text/html" title="What is NFT?" /><published>2023-01-14T00:00:00+05:30</published><updated>2023-01-14T00:00:00+05:30</updated><id>http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft</id><content type="html" xml:base="http://localhost:4000/web3/nft/blockchain/token/digital/2023/01/14/what-is-nft/">&lt;p&gt;An &lt;strong&gt;asset in the physical world that you own is comparable to a NFT&lt;/strong&gt;, like land, car, or house. It can be &lt;strong&gt;unique and scarce, but not necessarily!&lt;/strong&gt; Think about that pencil that you bought yesterday that is also an asset that you own, but that is neither unique not scarce. With an asset in the physical world, you can take it and it sits in your house or similar. And there’s never a question of ownership as it resides with you. Where is Mr. Karkman’s WWII rifle? It sits in Mr. Housmith’s residence. So it should now obviously belong to Mr. Housmith.&lt;/p&gt;
 
 &lt;p&gt;With assets in the digital world. Its &lt;strong&gt;difficult to represent ownership&lt;/strong&gt;. You can have a jpeg of your cat and so you might say that you own that image. You send the image to your neighbor who wants to see your cat. And now she has access to the image. And she can claim that she owns the image. She shares it on social. And some cat guy gets obssessed and downloads it from the internet. And shares it in his group and claims its his image.&lt;/p&gt;
 
@@ -246,6 +516,13 @@
 &lt;p&gt;&lt;strong&gt;NFTs allows us to prove ownership of digital assets.&lt;/strong&gt; There has been a lot of activity with NFTs. Billions have been spent on NFT transactions. With the recent media, it might seem like its hype and about monkey pictures and only art, but NFTs are much more than that! Decentralization is much more than that, and NFTs will play an integral part in decentralization.&lt;/p&gt;
 
 &lt;p&gt;The world has already been using NFTs to achieve a lot, as we saw some examples above. Lot of people have made fortunes with NFTs. And many more to come. You dont have to be a creator to understand NFTs, &lt;strong&gt;its for anybody who would require ownership of assets&lt;/strong&gt; in the Web3 era :)&lt;/p&gt;
+
+&lt;!--
+
+References:
+https://ethereum.org/en/nft/
+
+--&gt;
 
 &lt;!--
 Comparable to NFT in the physical-world in a asset that is unique and scrace. 
