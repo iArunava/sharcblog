@@ -21,7 +21,9 @@ url: https://sharc.attim.in
 
 google_analytics: G-878TSV9XZ9
 
-permalink: pretty
+#permalink: pretty
+#permalink: date
+permalink: /:year/:month/:day/:title.html
 
 remote_theme: jekyll/minima
 theme: minima
