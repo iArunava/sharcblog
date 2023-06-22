@@ -1,6 +1,7 @@
 # sharcBlog 🧪 📝 🚀
 > Blog
 
+
 <!-- Badges generated with https://github.com/MichaelCurrin/badge-generator -->
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/jekyll-blog-demo?include_prereleases&sort=semver)](https://GitHub.com/MichaelCurrin/jekyll-blog-demo/tags/)

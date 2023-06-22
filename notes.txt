@@ -1,0 +1,11 @@
+Run using
+```
+bundle exec jekyll serve
+```
+
+How to add a page
+---
+1. create pages.md in home dir
+2. create a page layout in _layouts/
+3. add articles for the page under _pages/
+4. add the page in _config.yml
