@@ -1,4 +1,453 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-22T10:27:31+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">DeFi - The future of Finance</title><link href="http://localhost:4000/2023/01/23/defi.html" rel="alternate" type="text/html" title="DeFi - The future of Finance" /><published>2023-01-23T00:00:00+05:30</published><updated>2023-01-23T00:00:00+05:30</updated><id>http://localhost:4000/2023/01/23/defi</id><content type="html" xml:base="http://localhost:4000/2023/01/23/defi.html">&lt;p&gt;With the traditional financial system that we have in place today it is difficult to get a lot of things done. Done in the right way, as well as in time, as well as with minimal funds. Lot of things in today’s banking system that exists in today’s banking system/other financial institutions are running technologies that are decades old and have not been upgraded. There’s space for lot of innovation. But that is not why traditional finance is gonna lose its edge, its cause of its &lt;strong&gt;inefficiency involved in what its responsibilities are.&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-30T20:03:17+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">First move with Move!</title><link href="http://localhost:4000/2023/01/28/hello-move.html" rel="alternate" type="text/html" title="First move with Move!" /><published>2023-01-28T00:00:00+05:30</published><updated>2023-01-28T00:00:00+05:30</updated><id>http://localhost:4000/2023/01/28/hello-move</id><content type="html" xml:base="http://localhost:4000/2023/01/28/hello-move.html">&lt;p&gt;In this article, we are going to take our first step with the Move Programming Language. Learn about some intricate details of how it works. Learn a bit about how to write Move and &lt;strong&gt;understand its syntax and publish our first Move Module&lt;/strong&gt; on the Aptos Chain. We will setup our local CLI to achieve all this.&lt;/p&gt;
+
+&lt;p&gt;Move is a programming language for Web3 that emphasizes on &lt;strong&gt;Scarcity and Access control&lt;/strong&gt;. &lt;strong&gt;Structs cannot be accidentally duplicated or dropped&lt;/strong&gt; unless explicitly defined, this by default enforces scarcity. Access Control comes from the notion of accounts as well as access privileges that have been enforced on the modules. A module &lt;strong&gt;unless it has a public constructor or public setters and getters, it cant be accessed from elsewhere&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here we will write a Move program that will &lt;strong&gt;set a message on the Aptos Chain&lt;/strong&gt;, thus altering the state of the chain and then &lt;strong&gt;read it back&lt;/strong&gt;. Alright, lets jump in now!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In this article, we will see:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#setting-up-the-env&quot;&gt;Setting up the env&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-a-module&quot;&gt;What is a Module?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#use-statements&quot;&gt;Use Statements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#resources-and-events&quot;&gt;Resources and Events&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#drop-and-store&quot;&gt;Drop and Store&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#constants&quot;&gt;Constants&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#functions&quot;&gt;Functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mutable-functions&quot;&gt;Mutable Functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#test-functions&quot;&gt;Test Functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#unit-tests&quot;&gt;Unit Tests&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#compile-test-and-publish&quot;&gt;Compile, Test and Publish&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#interact-with-the-module&quot;&gt;Interact with the Module&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;setting-up-the-env&quot;&gt;Setting up the env&lt;/h2&gt;
+&lt;p&gt;Let’s start by cloning the codebase that we are going to work with first.
+Please note that this repository was created for the purpose of this tutorial with some modifications from [1].&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/iArunava/hellomove.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now, your directory structure should look something like this.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
+├── Move.toml
+└── sources
+    ├── hello_blockchain.move
+    └── hello_blockchain_test.move
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You would notice an extra directory called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;framework&lt;/code&gt;. That directory just contains all the dependencies that are required for the project.&lt;/p&gt;
+
+&lt;p&gt;Before moving forward we need aptos cli installed on our system. You can head over to the installation site for all the different ways to install it, which can be found &lt;a href=&quot;https://aptos.dev/tools/aptos-cli/install-cli/&quot;&gt;here&lt;/a&gt;. If you are on linux/WSL the following should work fine. Only prerequisite is that you should have python3 installed in your system. Which comes by default in most OS.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -fsSL &quot;https://aptos.dev/scripts/install_cli.py&quot; | python3
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;That should be it. After that you should be able to do this.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ aptos -V
+aptos 2.0.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;My version is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2.0.2&lt;/code&gt;. Earlier versions upto 1.4 or above should work fine for this tutorial.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-a-module&quot;&gt;What is a Module?&lt;/h2&gt;
+&lt;p&gt;Now, we will understand what each file here is doing. Let’s start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move.move&lt;/code&gt; file. This is the source file which contains the logic that how this program will behave once it has been published on the chain. Lets take a look into this file.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;module hello_move::message {
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The first line of the file looks somewhat like this. Here we are defining a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;module&lt;/code&gt; in Move. Lets start with what is a module in Move.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Modules are libraries that define struct types along with functions that operate on these types. Struct types define the schema of Move’s global storage, and module functions define the rules for updating storage. Modules themselves are also stored in global storage.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;module&lt;/code&gt; in Move has the following syntax.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;module &amp;lt;address&amp;gt;::&amp;lt;identifier&amp;gt; {
+    (&amp;lt;use&amp;gt; | &amp;lt;friend&amp;gt; | &amp;lt;type&amp;gt; | &amp;lt;function&amp;gt; | &amp;lt;constant&amp;gt;)*
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;address&lt;/code&gt; here can be both named or literal address. Here comparing the syntax and code we find that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move&lt;/code&gt; in the code is a named address. And &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; is an identifier.&lt;/p&gt;
+
+&lt;p&gt;This named address, is defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Move.toml&lt;/code&gt; file, which we will explore later. Alright, so this module &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; will be published under the named address &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-statements&quot;&gt;Use Statements&lt;/h2&gt;
+&lt;p&gt;Next we see some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use&lt;/code&gt; statements.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use std::error;
+use std::signer;
+use std::string;
+use aptos_framework::account;
+use aptos_framework::event;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use&lt;/code&gt; has the following syntax&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use &amp;lt;address&amp;gt;::&amp;lt;module name&amp;gt;;
+use &amp;lt;address&amp;gt;::&amp;lt;module name&amp;gt; as &amp;lt;module alias name&amp;gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;These are declaring some public modules that one plans to use through out that can help us get things done faster. Looking closer, we are importing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; libraries from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;std&lt;/code&gt; account and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;account&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event&lt;/code&gt; from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aptos_framework&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use std::error&lt;/code&gt; would introduce an alias &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt;, and that would mean anywhere we could use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; instead of using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;std::error&lt;/code&gt;. Similarly, to importing libraries in other languages, we can use an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;as E&lt;/code&gt; statement to change the alias from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;E&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;resources-and-events&quot;&gt;Resources and Events&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct MessageHolder has key {
+ message: string::String,
+ message_change_events: event::EventHandle&amp;lt;MessageChangeEvent&amp;gt;,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This block of code defines a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource&lt;/code&gt;. Lets understand a bit more of what that means. Here we have defined a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; that has the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key&lt;/code&gt; ability. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key&lt;/code&gt; ability allows a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; to be used as a storage identifier. Its stored at the top-level and acts as storage. When a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; has the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key&lt;/code&gt; ability it turns it into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Resource&lt;/code&gt; is stored under the account and it exists only when assigned to an account and can be accessed only through that account.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here, we are defining a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource&lt;/code&gt; called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt;, which contains 2 objects:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string::String&lt;/code&gt;: which would store the message, and&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message_change_events&lt;/code&gt; of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event::EventHandle&amp;lt;MessageChangeEvent&amp;gt;&lt;/code&gt;: which stores the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event&lt;/code&gt; when the resource is updated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In short, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event&lt;/code&gt;s are emitted during the execution of a transaction. Modules can define its own &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event&lt;/code&gt; and choose when to emit it upon the execution of the module. Here, we are going to emit an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event&lt;/code&gt; every time the resource is updated. And &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message_change_events&lt;/code&gt; will store such events.&lt;/p&gt;
+
+&lt;h2 id=&quot;drop-and-store&quot;&gt;Drop and store&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct MessageChangeEvent has drop, store {
+        from_message: string::String,
+        to_message: string::String,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here we are defining a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; with the abilities &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drop&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;store&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;store&lt;/code&gt;: A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; needs a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;store&lt;/code&gt; ability as its been stored inside another &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt;. If you see, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; struct, it contains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageChangeEvent&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drop&lt;/code&gt;: value of this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; can be dropped by the end of the execution of the module.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And looking into the struct, we have 2 variables&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;from_message&lt;/code&gt; of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string::String&lt;/code&gt;, and&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;to_message&lt;/code&gt; of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string::String&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So when an event is emitted, it would contain the old message “from” which it is being updated and the new message “to” which it is being updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;constants&quot;&gt;Constants&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const ENO_MESSAGE: u64 = 0;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That line is self explanatory. We are defining a constant using the keyword &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENO_MESSAGE&lt;/code&gt; of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u64&lt;/code&gt; and it has a value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;functions&quot;&gt;Functions&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#[view]
+public fun get_message(addr: address): string::String acquires MessageHolder {
+		assert!(exists&amp;lt;MessageHolder&amp;gt;(addr), error::not_found(ENO_MESSAGE));
+		borrow_global&amp;lt;MessageHolder&amp;gt;(addr).message
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The first line here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#[view]&lt;/code&gt; declares this as a view function. Such functions do not modify the state of the blockchain and can be called using an API. A mutable function can also be declared as a view function. But please mark a mutable function as private so that such functions cannot be maliciously called during runtime.&lt;/p&gt;
+
+&lt;p&gt;In the next line, we define the function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message()&lt;/code&gt;. The keywords used here are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; which indicates that this function would be publicly accessible and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fun&lt;/code&gt; which just says that this is a function.&lt;/p&gt;
+
+&lt;p&gt;Next, we see the parameters that are passed to the function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(addr: address)&lt;/code&gt;, the name of the parameter is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addr&lt;/code&gt; and it is of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;address&lt;/code&gt;. It has a return type of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string::String&lt;/code&gt; and it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acquires MessageHolder&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acquires&lt;/code&gt; is required here as the function accesses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource and we dont want other parties to modify the value of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource&lt;/code&gt; when we are reading it. Also, if we have a function that calls a function that uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acquires&lt;/code&gt; then we also need to mark that child function with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;acquires&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, we see an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assert!&lt;/code&gt; statement. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assert&lt;/code&gt; has the following syntax,&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;assert!(condition: bool, code: u64)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;So we see that, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exists&amp;lt;MessageHolder&amp;gt;(addr)&lt;/code&gt; is the condition, which would return a boolean value True or False depending on if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource is present for the address that is being passed. If its not present we throw an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;error&lt;/code&gt; with the const code we declared earlier &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENO_MESSAGE&lt;/code&gt;. Incase, it is present. we return a immutable reference of the message that is present in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;key&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;borrow_global&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;borrow_global&lt;/code&gt; has the following syntax&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;borrow_global&amp;lt;T&amp;gt;(address): &amp;amp;T
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It looks for a type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;address&lt;/code&gt;. If its present it returns an immutable reference to that object. in the code we can see that once it is returned we are reading the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.message&lt;/code&gt; parameter from the object and returning it.&lt;/p&gt;
+
+&lt;p&gt;Alright, now that we have the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message&lt;/code&gt; function defined that would read the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; that is set in the chain, lets start defining the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; function that would set the message to what we want on the chain.&lt;/p&gt;
+
+&lt;h2 id=&quot;mutable-functions&quot;&gt;Mutable Functions&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public entry fun set_message(account: signer, message: string::String)
+    acquires MessageHolder {
+        ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We see the function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; declared here like before. It has an extra keyword called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;entry&lt;/code&gt;. An &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;entry&lt;/code&gt; modifier to a function allows to invoke these functions directly. And this allows to specify which function to begin the execution with. Thus, they can be considered as the “main” function in the module.&lt;/p&gt;
+
+&lt;p&gt;Next&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let account_addr = signer::address_of(&amp;amp;account);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;we get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;address&lt;/code&gt; of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt; using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;address_of&lt;/code&gt; function which takes in a reference to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;account&lt;/code&gt;. Next we see.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if (!exists&amp;lt;MessageHolder&amp;gt;(account_addr)) {
+	move_to(&amp;amp;account, MessageHolder {
+		message,
+		message_change_events: account::new_event_handle&amp;lt;MessageChangeEvent&amp;gt;(&amp;amp;account),
+	})
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We check if the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resource&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; exists in the given account address. Incase it does not we create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; and move that resource under the account using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;move_to&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;Incase, it does exist&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;else {
+	let old_message_holder = borrow_global_mut&amp;lt;MessageHolder&amp;gt;(account_addr);
+	let from_message = old_message_holder.message;
+	event::emit_event(&amp;amp;mut old_message_holder.message_change_events, MessageChangeEvent {
+			from_message,
+			to_message: copy message,
+	});
+	old_message_holder.message = message;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;borrow_global_mut&lt;/code&gt; to get a mutable reference of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;account_addr&lt;/code&gt; and get the message stored in it. We emit an event using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event::emit_event&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;emit_event&lt;/code&gt; accepts a reference to the event handle and a message. Here in our case we are passing a reference of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message_change_events&lt;/code&gt; in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource and a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageChangeEvent&lt;/code&gt; that contains the old and the new message. After that we set the message in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource to the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; that we have received.&lt;/p&gt;
+
+&lt;p&gt;Alright, that defines our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h2 id=&quot;test-functions&quot;&gt;Test Functions&lt;/h2&gt;
+&lt;p&gt;Now that we have our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; function declared lets write some tests to verify that everything works as expected. So moving down the file next we see a test function defined.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#[test(account = @0x1)]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The first line here declares that we are going to write a test function. And it mentions an account &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;account = @0x1&lt;/code&gt; which is the account through which this module is going to be tested. Here we set the account to a random account address that is created using a built-in function for testing purposes. Whenever, a module or a module member is marked for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test&lt;/code&gt; then it will not be included in the bytecode when compiled, unless compiled for testing.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public entry fun sender_can_set_message(account: signer) acquires MessageHolder {
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Alright, next we just write a function as before. Please note that this is a test function. And thus when compiled normally (ie not for testing) this function wont be included in the bytecode. Such a test function, doesnt accept any parameters other than the type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt;, if passed any parameters other than the type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt; it will result in an error when run.&lt;/p&gt;
+
+&lt;p&gt;Also, the arg name passed in testing annotation &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;account = @0x1&lt;/code&gt; should match the parameter name that is being passed in the function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sender_can_set_message(account: signer)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;And then we get the account address of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt; and store it in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addr&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let addr = signer::address_of(&amp;amp;account);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create_account_for_test()&lt;/code&gt; and pass it the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addr&lt;/code&gt; to create an account for the test purposes.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos_framework::account::create_account_for_test(addr);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We declare a variable called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stra&lt;/code&gt; and store the string &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Hello, Move&quot;&lt;/code&gt; in that.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let stra = string::utf8(b&quot;Hello, Move&quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then we use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; function that we have already defined above to set a message in this test account.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set_message(account,  stra);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We then use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message&lt;/code&gt; function defined above, to retrieve the message we have set in the above line.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let rmsg = get_message(addr);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And finally, the check to see that message that we defined initially &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stra&lt;/code&gt; matches with the message that was returned using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message&lt;/code&gt; that is stored in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rmsg&lt;/code&gt;. Incase it doesnt match, we throw the error code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ENO_MESSAGE&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;assert!(
+ rmsg == stra,
+ ENO_MESSAGE
+);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That defines the test function that was written. And additionally that explains the entire file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move.move&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;unit-tests&quot;&gt;Unit Tests&lt;/h2&gt;
+&lt;p&gt;One can also write unit tests in seperate files and aptos will pick that up based on the testing annotations. And test all the functions. Like for an example we have another file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sources/&lt;/code&gt; directory named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move_test.move&lt;/code&gt;. This file has a test only module declared using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#[test_only]&lt;/code&gt; and thus this module will be included only when compiled for testing.&lt;/p&gt;
+
+&lt;p&gt;The file name can be anything, it doesnt necessarily need to have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_test.move&lt;/code&gt; suffix. As long as there are test modules and functions declared using the test annotations, the compiler will pick it up while testing.&lt;/p&gt;
+
+&lt;p&gt;Looking into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move_test.move&lt;/code&gt; file we will see very similar things as before. It starts with&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#[test_only]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Which declares this entire module as test only.&lt;/p&gt;
+
+&lt;p&gt;Next, it declares the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message_tests&lt;/code&gt; module.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;module hello_move::message_tests {
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;After which it declares some of the aliases that we will use. Note that we also declared the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move::message&lt;/code&gt; that is the module we just wrote in the other file.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use std::signer;
+use std::unit_test;
+use std::vector;
+use std::string;
+use hello_move::message;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Moving from there, we declare a function named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_account()&lt;/code&gt; to get the account we will use for testing purposes. We use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create_signers_for_testing()&lt;/code&gt; to create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt; for testing. It returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vector&lt;/code&gt; and we then use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pop_back&lt;/code&gt; method to return that one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fun get_account(): signer {
+   vector::pop_back(&amp;amp;mut unit_test::create_signers_for_testing(1))
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Next, we see the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sender_can_set_message&lt;/code&gt; function which is exactly similar to the one we wrote in the other file except here we get the test account address using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_account()&lt;/code&gt; function that we just defined.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let account = get_account();
+let addr = signer::address_of(&amp;amp;account);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Please note again, that this is a test only module, and the compiler will run this test and include in the bytecode, only when compiled for testing. Alright, that should explain the workings of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move_test.move&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&quot;movetoml&quot;&gt;Move.toml&lt;/h2&gt;
+&lt;p&gt;Now, lets take a look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Move.toml&lt;/code&gt; file that is defined at the root of the package.&lt;/p&gt;
+
+&lt;p&gt;Each move package has a manifest file at the root with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.toml&lt;/code&gt; extension and it contains the metadata for the package such as name, version, and dependencies. Taking a look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Move.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[package]
+name = &quot;HelloMove&quot;
+version = &quot;0.0.0&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here we are declaring the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;version&lt;/code&gt; of the package.&lt;/p&gt;
+
+&lt;p&gt;Next, we are declaring the named address &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hello_move&lt;/code&gt; but we are leaving it undefined using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt; so that would mean that we need to pass the named address when we are compiling.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[addresses]
+hello_move = &quot;_&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And then we declare a dependency on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aptos-framework&lt;/code&gt; as we have already seen that we use a few functions from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aptos-framework&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[dependencies]
+AptosFramework = { local = &quot;./framework/aptos-framework&quot; }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that should define all the contents of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Move.toml&lt;/code&gt; file. And thus all the files that are there in the package.&lt;/p&gt;
+
+&lt;h2 id=&quot;compile-test-and-publish&quot;&gt;Compile, Test and Publish&lt;/h2&gt;
+&lt;p&gt;Now that we know what all the files are about and what they contain. We can go ahead and compile the package. But first lets start with initializing aptos.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos init --network devnet
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Tap Enter and follow through. The output should look something like this.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuring for profile default
+Configuring for network Devnet
+Enter your private key as a hex literal (0x...) [Current: Redacted | No input: Generate new key (or keep one if present)]
+
+No key given, keeping existing key...
+Account c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76 has been already found onchain
+
+---
+Aptos CLI is now set up for account c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76 as profile default!  Run `aptos --help` for more information about commands
+{
+  &quot;Result&quot;: &quot;Success&quot;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now lets fund this account using a faucet.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos account fund-with-faucet --account default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We should see an output similar to this&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+  &quot;Result&quot;: &quot;Added 100000000 Octas to account c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now lets compile the module using&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos move compile --named-addresses hello_move=default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Remember we kept the named address in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Move.toml&lt;/code&gt; file empty so we need to pass the named address as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;default&lt;/code&gt; one when we are compiling. Compilation output should look similar to this&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING HelloMove
+{
+  &quot;Result&quot;: [
+    &quot;c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76::message&quot;
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This would mean that the file was successfully compiled.&lt;/p&gt;
+
+&lt;p&gt;Next, lets test the modules&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos move test --named-addresses hello_move=default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We should be able to see both the tests passing&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING HelloMove
+Running Move unit tests
+[ PASS    ] 0xc1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76::message::sender_can_set_message
+[ PASS    ] 0xc1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76::message_tests::sender_can_set_message
+Test result: OK. Total tests: 2; passed: 2; failed: 0
+{
+  &quot;Result&quot;: &quot;Success&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And finally lets publish the module using&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos move publish --named-addresses hello_move=default
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The output you will see is similar to this.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Compiling, may take a little while to download git dependencies...
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING HelloMove
+package size 1765 bytes
+Do you want to submit a transaction for a range of [140300 - 210400] Octas at a gas unit price of 100 Octas? [yes/no] &amp;gt;
+yes
+{
+  &quot;Result&quot;: {
+    &quot;transaction_hash&quot;: &quot;0x22328486cd87414663d4461182b5f2de6447b29f9c32c682b152f6c127276568&quot;,
+    &quot;gas_used&quot;: 1403,
+    &quot;gas_unit_price&quot;: 100,
+    &quot;sender&quot;: &quot;c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76&quot;,
+    &quot;sequence_number&quot;: 0,
+    &quot;success&quot;: true,
+    &quot;timestamp_us&quot;: 1690433681245985,
+    &quot;version&quot;: 40008336,
+    &quot;vm_status&quot;: &quot;Executed successfully&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we have successfully published our module. We can go to the aptos explorer and check the transaction hash.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/firstmovetransaction.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Move Transaction&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Here if we notice we can see the payload, ie the message that we want to be stored in the chain being passed.&lt;/p&gt;
+
+&lt;h2 id=&quot;interact-with-the-module&quot;&gt;Interact with the Module&lt;/h2&gt;
+&lt;p&gt;Now that we have our module published on the chain, lets start interacting with the module.&lt;/p&gt;
+
+&lt;p&gt;To interact with our published module lets first trigger the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; method and update the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; stored in the resource &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;aptos move run --function-id 'default::message::set_message' --args 'string:first move with move'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here we are setting the message to ‘first move with move’. The output should be similar to the following.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Do you want to submit a transaction for a range of [50300 - 75400] Octas at a gas unit price of 100 Octas? [yes/no] &amp;gt;
+yes
+{
+  &quot;Result&quot;: {
+    &quot;transaction_hash&quot;: &quot;0x4e7d9e1ba498f3367f714d7e425f184f8d64d7d5d68ad962f30273384cea6464&quot;,
+    &quot;gas_used&quot;: 504,
+    &quot;gas_unit_price&quot;: 100,
+    &quot;sender&quot;: &quot;c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76&quot;,
+    &quot;sequence_number&quot;: 1,
+    &quot;success&quot;: true,
+    &quot;timestamp_us&quot;: 1690434192512775,
+    &quot;version&quot;: 40055278,
+    &quot;vm_status&quot;: &quot;Executed successfully&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And now that the message is set, we can get the message using the view function that we wrote &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_message&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl https://fullnode.devnet.aptoslabs.com/v1/accounts/c1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76/resource/0xc1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76::message::MessageHolder | json_pp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here substitute the url with your account address.&lt;/p&gt;
+
+&lt;p&gt;Recall, its a view function, so we can call it direcly like an API. So we can actually just directly go to this link in the browser and see our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; that is stored in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MessageHolder&lt;/code&gt; resource.&lt;/p&gt;
+
+&lt;p&gt;The output for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;curl&lt;/code&gt; should give a result similar to this.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+   &quot;data&quot; : {
+      &quot;message&quot; : &quot;first move with move&quot;,
+      &quot;message_change_events&quot; : {
+         &quot;counter&quot; : &quot;0&quot;,
+         &quot;guid&quot; : {
+            &quot;id&quot; : {
+               &quot;addr&quot; : &quot;0xc1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76&quot;,
+               &quot;creation_num&quot; : &quot;4&quot;
+            }
+         }
+      }
+   },
+   &quot;type&quot; : &quot;0xc1afaaf97eaa61128b5b1439ee9732ef581b70f0e56f740f1bcf964e5427cf76::message::MessageHolder&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; key you can see the message that we have just set.!&lt;/p&gt;
+
+&lt;p&gt;You can continue with updating the message as many times as required as you want using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; function and then reading it. Do note that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_message&lt;/code&gt; initiates a transaction that is it updates the state of the chain and thus you do need to pay gas everytime you make a transaction. If you see above, you can see the amount of gas used and the price per gas. This is why initially the account needs to be funded so that we can pay the gas required. The current account can be funded using a faucet as it is on the devnet, if on mainnet you need to have APT in your account to pay for this gas.&lt;/p&gt;
+
+&lt;p&gt;Alright, Congratulations! You now understand Move language, how to compile, test and publish a Move module and interact with that Move module!
+As a next step, you can head over to the aptos.dev docs to learn more about Move and the Aptos Chain.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&quot;https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples/move-tutorial&quot;&gt;Move Tutorial from aptos-core&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[2] &lt;a href=&quot;https://aptos.dev&quot;&gt;Aptos Docs&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="web3" /><category term="blockchain" /><category term="token" /><category term="defi" /><category term="finance" /><category term="decentralized" /><summary type="html">In this article, we are going to take our first step with the Move Programming Language. Learn about some intricate details of how it works. Learn a bit about how to write Move and understand its syntax and publish our first Move Module on the Aptos Chain. We will setup our local CLI to achieve all this.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/banners/move_header.png" /><media:content medium="image" url="http://localhost:4000/assets/images/banners/move_header.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">DeFi - The future of Finance</title><link href="http://localhost:4000/2023/01/23/defi.html" rel="alternate" type="text/html" title="DeFi - The future of Finance" /><published>2023-01-23T00:00:00+05:30</published><updated>2023-01-23T00:00:00+05:30</updated><id>http://localhost:4000/2023/01/23/defi</id><content type="html" xml:base="http://localhost:4000/2023/01/23/defi.html">&lt;p&gt;With the traditional financial system that we have in place today it is difficult to get a lot of things done. Done in the right way, as well as in time, as well as with minimal funds. Lot of things in today’s banking system that exists in today’s banking system/other financial institutions are running technologies that are decades old and have not been upgraded. There’s space for lot of innovation. But that is not why traditional finance is gonna lose its edge, its cause of its &lt;strong&gt;inefficiency involved in what its responsibilities are.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;!-- _includes/image.html --&gt;
 &lt;div class=&quot;image-wrapper center&quot;&gt;
