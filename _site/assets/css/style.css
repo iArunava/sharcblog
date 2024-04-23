@@ -234,5 +234,7 @@ hr:before { content: "\2022     \2022     \2022"; font-size: 15px; color: rgba(2
 
 .center { display: block; margin-left: auto; margin-right: auto; }
 
-.image-wrapper { text-align: center; width: 440px; }
-.image-wrapper .image-caption { text-align: center; font-style: italic; margin-top: 0.6px; font-size: 90%; }
+.image-caption-banner { text-align: center; font-style: italic; margin-top: 0.6px; font-size: 100%; }
+
+.image-wrapper { text-align: center; width: 740px; }
+.image-wrapper .image-caption { text-align: center; font-style: italic; font-weight: bold; margin-top: 0.6px; font-size: 90%; }

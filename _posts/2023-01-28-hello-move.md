@@ -2,7 +2,8 @@
 title: "First move with Move!"
 subtitle: An Introduction
 categories: web3 blockchain token defi finance decentralized
-image: /assets/images/banners/move_header.png
+image: 
+  path: /assets/images/banners/move_header.png
 layout: post
 ---
 

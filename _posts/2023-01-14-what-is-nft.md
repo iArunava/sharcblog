@@ -2,7 +2,8 @@
 title: "What is NFT?"
 subtitle: An Introduction
 categories: web3 nft blockchain token digital
-image: /assets/images/nftgallery_oncyber_compressed.jpg
+image: 
+  path: /assets/images/nftgallery_oncyber_compressed.jpg
 layout: post
 ---
 

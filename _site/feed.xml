@@ -1,4 +1,361 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-30T20:03:17+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">First move with Move!</title><link href="http://localhost:4000/2023/01/28/hello-move.html" rel="alternate" type="text/html" title="First move with Move!" /><published>2023-01-28T00:00:00+05:30</published><updated>2023-01-28T00:00:00+05:30</updated><id>http://localhost:4000/2023/01/28/hello-move</id><content type="html" xml:base="http://localhost:4000/2023/01/28/hello-move.html">&lt;p&gt;In this article, we are going to take our first step with the Move Programming Language. Learn about some intricate details of how it works. Learn a bit about how to write Move and &lt;strong&gt;understand its syntax and publish our first Move Module&lt;/strong&gt; on the Aptos Chain. We will setup our local CLI to achieve all this.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-23T16:02:04+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sharc</title><subtitle>Insights into the world of web3 and Decentralization of different platforms.</subtitle><entry><title type="html">Authentication and Authorization System</title><link href="http://localhost:4000/2024/03/01/authentication-system-design.html" rel="alternate" type="text/html" title="Authentication and Authorization System" /><published>2024-03-01T00:00:00+05:30</published><updated>2024-03-01T00:00:00+05:30</updated><id>http://localhost:4000/2024/03/01/authentication-system-design</id><content type="html" xml:base="http://localhost:4000/2024/03/01/authentication-system-design.html">&lt;p&gt;In this article, we are going to talk about a system for performing authentication and authorization securely. To start off with lets understand, what is the difference between Authentication and Authorization.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Authentication&lt;/strong&gt; is the process of proving, you are, who you say you are, when accessing an application.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Authorization&lt;/strong&gt; is the process of defining and enforcing access policies - that is, what you can do once you’re authenticated.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In this article, we will see:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#Why-authentication-and-authorization-matter&quot;&gt;Why Authentication and Authorization matter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-authentication-works&quot;&gt;How Authentication works&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-authorization-works&quot;&gt;How Authorization works&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#authentication-system-design&quot;&gt;Authentication System Design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;why-authentication-and-authorization-matter&quot;&gt;Why Authentication and Authorization matter?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/ANZ.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Authentication and Authorization (source: Jeffrey Marvin Forones|Geek Culture. Modified)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Lets say we are in a meeting, and you are the leading the conversation. To ask for updates/status for something to the right person, you need to identify (ie &lt;strong&gt;Authenticate&lt;/strong&gt;) the person. Even to share some sensitive data with a person, you need to authenticate the person correctly. And that is where authentication comes in.&lt;/p&gt;
+
+&lt;p&gt;Now say, in the same meeting, a few decisions needs to be made. So for that, people who have the right for taking those decisions should be the one taking the call, we cant just allow everyone to do everything. Obviously some people are not catered enough to make some decisions, and some for sure will try to make the worst out of it. So that brings &lt;strong&gt;Authorization&lt;/strong&gt;, that gives certain people the rights/permissions for certain activities.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-authentication-works&quot;&gt;How Authentication works?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/rt-and-at.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Token Based Authentication; Access Token and Refresh Token [SPA=SinglePageApplication, RT=RefreshToken, AT=AccessToken, RS=RefreshServer, AS=AuthorizationServer] (Source : Okta)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;To authenticate a person, we can assign a unique phrase to each person, and given the person tells the phrase correctly and their name. We can say that ok, we have identified the person. This is the usual usernames and passwords approach. When the right credentials are given, a system considers the identity valid and grants access. This is known as 1FA or &lt;strong&gt;&lt;em&gt;Single-factor authentication&lt;/em&gt;&lt;/strong&gt;(SFA).&lt;/p&gt;
+
+&lt;p&gt;SFA is considered fairly insecure. Why? Because users are notoriously bad at keeping their login information secure. Multi-factor authentication (MFA) is a more secure alternative that requires users to prove their identity in more than one way. Some such ways are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Single-use PIN numbers / OTP&lt;/li&gt;
+  &lt;li&gt;Authentication apps run by secure 3rd party (ex. Google/Microsoft Authenticator)&lt;/li&gt;
+  &lt;li&gt;Biometrics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once authenticated, the person would keep performing actions freely on the application. And the application is expected to have the person recognized throughout their journey without forgetting them. Ideally, it would be too much to ask the user to provide the password everytime they move to a different page, or they do some activity. So we need a way to keep the user authenticated after they have entered their credentials and they have been authenticated once. This is called &lt;strong&gt;Session Management&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;2 ways to keep the user authenticated:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session-based authentication&lt;/strong&gt;: When a user logins to a website on a browser, the server creates a session for that user and assigns a sessionid. This sessionid is stored by the server for reference and is sent back to the user to be stored in a cookie in the browser. Now each time the user would make a request the browser will send the sessionid along with the request. Which will help in authenticating the request. And, thus, preserving authentication while the user is on the site.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Token-based authentication&lt;/strong&gt;: For this, the server creates a encrypted token which is sent to the user and is saved by the browser only, as HttpOnly Cookies. All required information such as the user information, permissions and expiry of the token are encrypted within the token. The token is sent along for calls to the server. The server simply decrypts the token with the secret key and verifies the user. This token is refreshed at intervals.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The main differences between these two approaches would be that token-based authn is &lt;strong&gt;Stateless&lt;/strong&gt;, cause the token neednot be stored on the server side. But for session-based authentication, the token are needed to be stored on the server side as well, which makes it &lt;strong&gt;Stateful&lt;/strong&gt;. Which brings up complications, when the system is scaled or the number of users grows.&lt;/p&gt;
+
+&lt;p&gt;For token-based authentication, we mostly use JWTs (JSON Web Tokens).&lt;/p&gt;
+
+&lt;h2 id=&quot;how-authorization-works&quot;&gt;How Authorization works?&lt;/h2&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/AuthDash.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Role Based Authorization Control (RBAC) (source: Ajay Shekhawat | Dribble)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Once the user is authenticated, we would still need to ensure they’re only allowed to access resources that they have permissions to access. Unauthorized access to sensitive data can be a disaster. By the principle of least priviledge, companies would usually set up access policies such that by default you have access to what is required for you absolutely. And then in progression to that you have additional access. Common ways to segment access are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Role-based Access Control (RBAC)&lt;/strong&gt; : Users are assigned to a certain group/role that comes with set permissions. Examples: admin, member, owner.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Policy-based Access Control (PBAC)&lt;/strong&gt; : Dynamically determines access privileges during authorization based on policies and rules. Policies are based on user roles, job functions, and organizational requirements.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Attribute-based Access Control (ABAC)&lt;/strong&gt; : Users are permitted access according to attributes like title, certification, training, and/or environmental factors like location.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Access Control Lists (ACLs)&lt;/strong&gt; : Each user or entity has individual permissions that can be turned on or off, similar to installing a new app on your phone and deciding which permissions to grant (location services, contacts, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/ACL.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;A screen for Access Control Lists (source: Povio)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;ACL is frequently used at granular level than either ABAC or RBAC - for example, to grant individual users access to a certain file. ABAC and RBAC are generally instituted as company-wide policies.&lt;/p&gt;
+
+&lt;h2 id=&quot;authentication-system-design&quot;&gt;Authentication System Design&lt;/h2&gt;
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/Authnz.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Authentication and Authorization System Design (source: InterviewPen. Modified)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;h4 id=&quot;requirements&quot;&gt;&lt;ins&gt;Requirements&lt;/ins&gt;&lt;/h4&gt;
+&lt;p&gt;Lets first start with defining the &lt;strong&gt;&lt;em&gt;Functional requirements&lt;/em&gt;&lt;/strong&gt; of the system:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Registration&lt;/strong&gt;                      : Allow users to register by providing necessary information.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Login&lt;/strong&gt;                             : Authenticate users based on their credentials.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Session Management&lt;/strong&gt;                : Efficiently manage user sessions to ensure security.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Password Recovery&lt;/strong&gt;                 : Provide a secure process for users to recover their passwords.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Access Control&lt;/strong&gt;                    : Define roles and permissions for different user types.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Audit Trail&lt;/strong&gt;                       : Maintain detailed logs of authentication events for auditing.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt; : Ensure low latency and quick response times.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A few &lt;strong&gt;&lt;em&gt;Non-functional requirements&lt;/em&gt;&lt;/strong&gt; that we are not going to consider for the scope of this article are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Multi-Factor Authentication (MFA)&lt;/strong&gt; : Implement a robust MFA system.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;    : Prioritize data security through encryption, secure storage, and secure communication.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt; : Design the system to handle a growing number of users and transactions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt; : Minimize system downtime and ensure high availability.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Usability&lt;/strong&gt;   : Develop an intuitive user interface for a seamless experience.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;capacity-estimation&quot;&gt;&lt;ins&gt;Capacity Estimation&lt;/ins&gt;&lt;/h4&gt;
+
+&lt;h5 id=&quot;traffic-estimation&quot;&gt;&lt;ins&gt;Traffic Estimation&lt;/ins&gt;&lt;/h5&gt;
+&lt;p&gt;First lets start with &lt;strong&gt;&lt;em&gt;Traffic Estimation&lt;/em&gt;&lt;/strong&gt;. Assuming an average traffic of 100,000 per month.&lt;/p&gt;
+
+&lt;p&gt;We are estimating a 100k user traffic per month. Which translates to 0.04 request per second. We would need to respond to each request within 500ms 90% of the time, ie we require a p90 latency of 500ms.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;assumed_traffic_per_month = 100000 #requests
+assumed_traffic_per_day = assumed_traffic_per_month / 30
+                        ~= 3350 (assuming on higher end; 3333.33 to be precise)
+estimated_time_per_request = 500 #ms; P90 of 500ms
+traffic_per_second = (assumed_traffic_per_month) / (30*24*60*60) 
+                   = 0.04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Service Level Objective (SLO)&lt;/strong&gt; :  500ms (maximal acceptable latency, immaterial of the load on the system)&lt;/p&gt;
+
+&lt;p&gt;The average capacity 1 instance can take, based on our calculations is approximately 35ms to serve a request, assuming there are no heavy processing happening for the particular request.&lt;/p&gt;
+
+&lt;p&gt;Lets generate two more &lt;em&gt;derived metrics&lt;/em&gt; using the above metrics.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Capacity&lt;/em&gt;&lt;/strong&gt; : Acceptable backlog per instance : Maximum number of requests(load) that can be accepted by an instance, without compromising SLO.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Demand&lt;/em&gt;&lt;/strong&gt; : Backlog per instance : Total number of requests (load) that flows into a unit/instance based on current traffic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus,&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SLO = 500ms
+approx_response_time_for_one_request = 35 #ms
+capacity = SLO/approx_response_time_for_one_request
+         = 500 / 35
+         ~= 20
+
+load_on_one_instance = 0.04
+instances_available = 1
+demand = traffic_per_second / instances_available
+       = 0.04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With the demand and capacity available, lets calculate total number of instances required.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;total_units_required = demand / capacity
+                     = 0.04 / 20
+                     = 0.002
+                     ~= 1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Thus, we would be easily be able to handle 100k requests per month, with 0.04 requests per second, with 1 instance. Where each unit can handle 20 requests per second without compromising SLO.&lt;/p&gt;
+
+&lt;h5 id=&quot;storage-estimation&quot;&gt;&lt;ins&gt;Storage Estimation&lt;/ins&gt;&lt;/h5&gt;
+
+&lt;p&gt;We would ideally need to store the user details for each user for authentication and authorization access. 
+Assuming, 5kb / user&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;monthly_new_users = 500
+monthly_additional_storage = 500 * 5kb
+                           = 2500kb 
+                           ~= 2GB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So every month, assuming we will onboard 500 new users, we will require 2GB more storage.&lt;/p&gt;
+
+&lt;p&gt;Incase we would like to keep authentication logs.\n
+Each authentication request is expected to take 2kb to store.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;auth_request_size = 2kb #assumption
+monthly_storage = monthly_visitors * auth_request_size
+                = 100,000 * 2KB
+                ~= 200MB
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Thus, each month we would require an additional of 200MB, assuming a monthly traffic of 100k.&lt;/p&gt;
+
+&lt;h4 id=&quot;database-design&quot;&gt;&lt;ins&gt;Database Design&lt;/ins&gt;&lt;/h4&gt;
+
+&lt;p&gt;Now that we have the capacity estimation done. Lets create the schemas of the database required to support the functional requirements.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/Authentication_Authorization_SD.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Authentication and Authotization Database Schema&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Lets quickly go over the tables. We are using 6 tables.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Users - To store all the user information&lt;/li&gt;
+  &lt;li&gt;Credentials - To store the access/refresh credentials once the user has been authorized.&lt;/li&gt;
+  &lt;li&gt;Passwords - To store the user encrypted user passwords.&lt;/li&gt;
+  &lt;li&gt;PasswordRequests - To store the password change requests that comes for a particular user.&lt;/li&gt;
+  &lt;li&gt;Sessions - To store when the user had an active session and when was their last activity.&lt;/li&gt;
+  &lt;li&gt;ActivityApproval - To store approval requests for a activity performed by a particular user, that would be verified by admin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;high-level-design-for-the-authentication-system&quot;&gt;&lt;ins&gt;High-Level Design for the Authentication System&lt;/ins&gt;&lt;/h4&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/Auth_HLD.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Authentication and Authotization HLD&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;h5 id=&quot;system-endpoints&quot;&gt;&lt;ins&gt;System Endpoints&lt;/ins&gt;&lt;/h5&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Endpoint&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/login&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Authenticate user credentials. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/logout&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;End user session and revoke authentication tokens. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/register&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Create a new user. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/update/:userId&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Update user information. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/delete/:userId&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Delete a user account. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/grant/:userId/:permission&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Grant specific permissions to a user. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/revoke/:userId/:permission&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Revoke permissions from a user. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/check/:userId/:resource&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Check user’s access to a specific resource. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/create/:userId&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Create a new user session. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/expire/:sessionId&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Expire a user session. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;&lt;em&gt;/validate/:sessionId&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Validate an active user session. &lt;br /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&quot;requirements-fulfilment&quot;&gt;&lt;ins&gt;Requirements Fulfilment&lt;/ins&gt;&lt;/h5&gt;
+
+&lt;p&gt;Now, with all the things in place lets see how we can complete all the requirements.&lt;/p&gt;
+
+&lt;h6 id=&quot;registration&quot;&gt;&lt;ins&gt;Registration&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - When a new user visits our application. We need to store user details so we can authorize/identify the user next time they visit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - When a new user visits the application, and enters user details along with their email and password. That will get captured in the database. The user details will be stored in the User table. And the password will be stored in the credentials table in an encrypted form.&lt;/p&gt;
+
+&lt;h6 id=&quot;login&quot;&gt;&lt;ins&gt;Login&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - When an existing user visits our application. We need to identify the user so we can authorize/identify their actions and show them data that belongs to them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - When an existing user visits the application, and enters their details, email and password. We hash the password and match the hash against the hash stored for the user in the Credentials Table. If it matches then we have been able to identify the user successfully. Else they need to enter the correct password that they entered while registering. This process is called &lt;strong&gt;&lt;em&gt;Authentication&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;session-management&quot;&gt;&lt;ins&gt;Session Management&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - When a user has authenticated themselves, by entering their user and password. We need to make sure that they stay logged in as they perform their future actions / try to see sensitive data, without having them re-entering their password again and again.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - When the user authenticates successfully. The Authentication server will share 2 tokens with the client. A &lt;strong&gt;access_token&lt;/strong&gt; and a &lt;strong&gt;refresh_token&lt;/strong&gt;. The access_token can have encrypted data with it and it has a short expiry time cause of security reasons. Once the client has the access_token, it sends the access_token back along with every request which helps in authenticating the request. When the access_token expires, the client has to ask for a new access_token using the refresh_token provided. This helps in maintaining a session.&lt;/p&gt;
+
+&lt;h6 id=&quot;password-recovery&quot;&gt;&lt;ins&gt;Password Recovery&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - When a user forgets their password, they would need to be able to reset their password securely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - When the user forgets their password, they can submit their email address in the forgot password page, and we will generate a one time code and send the link to their email. When the user clicks on this link with the code and email address. We will securely be able to identify that the password recovery request is authentic. And provide the user to set their new password. And thus being able to recover the password.&lt;/p&gt;
+
+&lt;h6 id=&quot;access-control&quot;&gt;&lt;ins&gt;Access Control&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - When a user performs a certain action, we need to make sure that the user is authenticated to perform that action and only then allow the action to happen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - We will maintain a list of actions, lets say 1-12, for simplicity. For each user we will maintain the authenticated actions for that user. So now lets say the user tries to perform an action #id 4. We will check if the user has the permissions to perform action 4. If yes, we will go ahead and complete the request. Else we show that the request isnt successful cause of lack of permissions.&lt;/p&gt;
+
+&lt;h6 id=&quot;audit-trail&quot;&gt;&lt;ins&gt;Audit Trail&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - Incase of a security incident, we should be able to have enough logs to look through and have a plausible reason as to what might have happened / or any leads as to what might have been a possible cause of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - For such scenarios, we can keep logs for every authentication action that happens on the server.
+                (a). For each login request, we will keep a log as to when the authentication happened, from where, ips and other relevant details.
+                (b). For each password recovery request, we will keep a log as to when it was initiated, from where, ips, whether the request was complete and other relevant details.
+                (c). Additionally, we will keep logs around each time a user is authorized / unauthorized for an action and by who.
+                These logs in all, should be able to indicate what might have happened incase trying to understand some scenario.&lt;/p&gt;
+
+&lt;h6 id=&quot;performance&quot;&gt;&lt;ins&gt;Performance&lt;/ins&gt;&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Requirement&lt;/strong&gt; - Requirement for performance as discussed in capacity estimation section, is 0.04 requests/second and 100k requests per month.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fulfilled&lt;/strong&gt; - We have already handled the requirement with enough servers in the capacity estimation section.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper center&quot;&gt;
+    
+        &lt;img src=&quot;/assets/images/table_authnz.webp&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Authentication vs Authorization (source: OutSystems)&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;In this article, we started by understanding what is the difference between Authentication and Authorization. Next, we created a Authentication and Authorization System. That is safe, secure, delivers performance while catering to industry standards and meeting all the desired requirements. Going forward i might update certain parts of the article to make it stay relevant as well as to cover more information and insights in building such a system.&lt;/p&gt;</content><author><name></name></author><category term="system-design" /><category term="authorization" /><category term="authentication" /><category term="jwt" /><category term="oauth" /><summary type="html">In this article, we are going to talk about a system for performing authentication and authorization securely. To start off with lets understand, what is the difference between Authentication and Authorization.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/banners/AuthnToon.png" /><media:content medium="image" url="http://localhost:4000/assets/images/banners/AuthnToon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">First move with Move!</title><link href="http://localhost:4000/2023/01/28/hello-move.html" rel="alternate" type="text/html" title="First move with Move!" /><published>2023-01-28T00:00:00+05:30</published><updated>2023-01-28T00:00:00+05:30</updated><id>http://localhost:4000/2023/01/28/hello-move</id><content type="html" xml:base="http://localhost:4000/2023/01/28/hello-move.html">&lt;p&gt;In this article, we are going to take our first step with the Move Programming Language. Learn about some intricate details of how it works. Learn a bit about how to write Move and &lt;strong&gt;understand its syntax and publish our first Move Module&lt;/strong&gt; on the Aptos Chain. We will setup our local CLI to achieve all this.&lt;/p&gt;
 
 &lt;p&gt;Move is a programming language for Web3 that emphasizes on &lt;strong&gt;Scarcity and Access control&lt;/strong&gt;. &lt;strong&gt;Structs cannot be accidentally duplicated or dropped&lt;/strong&gt; unless explicitly defined, this by default enforces scarcity. Access Control comes from the notion of accounts as well as access privileges that have been enforced on the modules. A module &lt;strong&gt;unless it has a public constructor or public setters and getters, it cant be accessed from elsewhere&lt;/strong&gt;.&lt;/p&gt;
 

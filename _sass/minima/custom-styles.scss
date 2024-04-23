@@ -40,13 +40,22 @@ hr {
   margin-right:auto;
 }
 
+.image-caption-banner {
+  text-align: center;
+  font-style: italic; 
+  //color: $grey-color;
+  margin-top: $spacing-unit / 50;
+  font-size: 100%;
+}
+
 .image-wrapper {
     text-align: center;
-    width: 440px;
+    width: 740px;
 
     .image-caption {
         text-align: center;
         font-style: italic;
+        font-weight: bold;
         //color: $grey-color;
         margin-top: $spacing-unit / 50;
         font-size: 90%;

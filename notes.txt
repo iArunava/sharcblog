@@ -3,6 +3,11 @@ Run using
 bundle exec jekyll serve
 ```
 
+Install using
+```
+bundle install --path ~/.gem
+```
+
 How to add a page
 ---
 1. create pages.md in home dir
